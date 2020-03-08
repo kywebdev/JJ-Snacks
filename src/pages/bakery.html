@@ -1,0 +1,19 @@
+---
+title: Products - Bakery Products
+products-active: active
+
+hero-class: hero--short
+hero-img: bakery
+hero-page-name: <a href="products.html" class="callout-link">Back</a>
+hero-heading: Bakery Products
+---
+
+{{> hero}}
+<main class="products-page">
+    {{> filter-bar-products}}
+    <div class="products">
+    {{#each data.bakery-products}}
+        {{> product}}
+    {{/each}}
+    </div>
+</main>

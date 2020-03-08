@@ -1,1 +1,28 @@
-# JJ-Snacks
+# J&J Snacks
+- Live site: [https://jjsnack.com](https://jjsnack.com)
+
+## List of templates
+
+- [Homepage](https://kywebdev.github.io/JJ-Snacks/index.html)
+    - [Contract Manufacturing](https://kywebdev.github.io/contract-manufacturing.html)
+- [Products](https://kywebdev.github.io/products.html)
+    - [Bakery Products](https://kywebdev.github.io/bakery.html)
+    - [Retail Products](https://kywebdev.github.io/retail.html)
+    - [Frozen Beverage Products](https://kywebdev.github.io/frozen-beverage.html)
+    - [Food Service Products](https://kywebdev.github.io/food-service.html)
+- [Investors](https://kywebdev.github.io/investors.html)
+    - [Financial News](https://kywebdev.github.io/financial-news.html)
+    - [Marketing News](https://kywebdev.github.io/marketing-news.html)
+        - [Article Detail](https://kywebdev.github.io/article.html)
+    - [Financial Reports](https://kywebdev.github.io/reports.html)
+    - [NASDAQ Links](https://kywebdev.github.io/nasdaq-links.html)
+    - [Investor FAQs](https://kywebdev.github.io/faq.html)
+    - [Corporate Governance](https://kywebdev.github.io/governance.html)
+- [About](https://kywebdev.github.io/about-us.html)
+    - [Citizens being good citizens](https://kywebdev.github.io/citizens.html)
+- [Careers](https://kywebdev.github.io/careers.html)
+    - [Benefits & Culture](https://kywebdev.github.io/benefits-culture.html)
+- [Contact](https://kywebdev.github.io/contact.html)
+- [Privacy Policy](https://kywebdev.github.io/privacy-policy.html)
+- [Terms of Use](https://kywebdev.github.io/terms.html)
+- [Cookies](https://kywebdev.github.io/cookies.html)

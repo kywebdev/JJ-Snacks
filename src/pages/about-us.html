@@ -1,0 +1,62 @@
+---
+title: About Us
+about-active: active
+
+hero-img: about
+hero-page-name: About Us
+hero-heading: Allow us to introduce ourselves.
+---
+
+{{> hero}}
+<main class="primary-page">
+    <div class="section-container">
+        <div class="grid-x">
+            <div class="cell large-8 jj-story">
+                <h3>The story of J&J Snack Foods Corp.</h3>
+                <p>Little did he know it at the time, but when Gerald B. Shreiber raised his hand and purchased the ailing J&J Pretzel Company at a court auction, he set in motion events that would yield a publicly traded snack food empire. Flash forward almost 50 years, and what started with a humble facility and 8 employees has grown into a family of 4200 strong with locations across the country and products in every supermarket nation wide.</p>
+                <p>As a leader and innovator in the snack food industry, J&J provides nutritious and affordable branded-niche snack foods to foodservice and retail supermarket outlets across the U.S. Our products include such icons as SUPERPRETZEL and ICEE, fan favorites like Luigi’s Italian Ice, Funnel Cake Factory Funnel Cakes, and Tio Pepe’s® Churros as well as a host of other products spanning the baked goods, frozen beverage and frozen novelties categories.</p>
+            </div>
+            <div class="cell large-4 leaders">
+                <h3>Leadership</h3>
+                {{#each data.leaders}}
+                <div class="leaders__leader">
+                    <div class="leaders__leader__info">
+                        <p><strong>{{name}}</strong><br />
+                            {{job-title}}</p>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+    <div class="corporate-timeline" id="corporate-timeline">
+        <div class="section-container">
+            <h1>Corporate Timeline</h1>
+            {{> timeline-year-slider}}
+        </div>
+        <div class="grid-container">
+            <div class="timeline-slider">
+                {{#each data.timeline-slide}}
+                <div class="slide" data-slide="{{data-slide}}">
+                    {{#if img}}
+                    <div class="timeline-slider__img">
+                        <img src="assets/img/{{img}}.jpg" alt="" />
+                    </div>
+                    {{/if}}
+                    <div class="timeline-slider__info">
+                        <p class="year-intro">In the year</p>
+                        <p class="year">{{year}}</p>
+                        {{{desc}}}
+                        <a href="" class="callout-link year-next">Next year</a>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+    <div class="grid-x cards about-cards">
+        {{#each data.about-page-cards}}
+            {{> card}}
+        {{/each}}
+    </div>
+</main>

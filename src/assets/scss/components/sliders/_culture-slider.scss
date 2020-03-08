@@ -1,0 +1,58 @@
+.culture-slider {
+    .slick-list {
+        width: 100%;
+        padding: 0px 20vw !important;
+
+        @media screen and (max-width: 1000px) {
+            padding: 0px 15vw !important;
+        }
+        @media screen and (max-width: $small) {
+            padding: 0px 10vw !important;
+        }
+    }
+    .slick-prev {
+        top: 50%;
+        width: 90px;
+        height: 90px;
+        background-color: $gold;
+        background-image: url('../img/white-arrow-left.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        transition: .3s ease-in-out;
+
+        &:hover, &:focus, &:active {
+            background-color: darken($gold, 10%);
+            background-image: url('../img/white-arrow-left.svg');
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        &:before {
+            display: none;
+        }
+    }
+    .slick-next {
+        top: 50%;
+        width: 90px;
+        height: 90px;
+        background-color: $gold;
+        background-image: url('../img/white-arrow-right.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        transition: .3s ease-in-out;
+
+        &:hover, &:focus, &:active {
+            background-color: darken($gold, 10%);
+            background-image: url('../img/white-arrow-right.svg');
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        &:before {
+            display: none;
+        }
+    }
+    .slide {
+        img {
+            width: 100%;
+        }
+    }
+}

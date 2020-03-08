@@ -1,0 +1,61 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>{{title}} | J&J Snack Foods</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link rel="stylesheet" href="{{root}}assets/css/app.css">
+        {{#ifpage 'index'}}
+        <style>
+            .home-hero-slider .slick-dots li:nth-of-type(1):after {
+                content: 'About';
+            }
+            .home-hero-slider .slick-dots li:nth-of-type(2):after {
+                content: 'Products';
+            }
+            .home-hero-slider .slick-dots li:nth-of-type(3):after {
+                content: 'Investors';
+            }
+        </style>
+        {{/ifpage}}
+    </head>
+    <body id="top">
+        <!--[if lte IE 9]>
+            <p class="browserupgrade"><span class="fas fa-exclamation-triangle"></span> You are using an outdated browser. Please <a href="http://browsehappy.com/" target="_blank">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        {{> search}}
+        {{> mobile-nav}}
+        {{> header}}
+        <div class="site">
+            {{> body}}
+            {{> footer}}
+        </div>
+        <script>
+          var _iconBase = 'assets/img/';
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+        <script src="{{root}}assets/js/picturefill.min.js" async></script>
+        <script src="{{root}}assets/js/app.js"></script>
+        {{#ifpage 'contact'}}
+        <!--<script src="https://maps.googleapis.com/maps/api/js?v=3.36&key=AIzaSyD3qDMehgFWS9C-iRa8dVjz3Y3nrOS5KP0&callback=initMap"></script>-->
+        {{/ifpage}}
+        {{#ifpage 'contract-manufacturing' 'careers'}}
+        <script>
+            $(document).ready(function() {
+                // add background color to states with facilities
+                var facilityStates = ['NY', 'PA', 'NJ', 'NC', 'GA', 'FL', 'IL', 'TX', 'MO', 'OR', 'CA'];
+
+                $.each(facilityStates, function( index, value ) {
+                    $('#' + value).attr('class', 'has-facility');
+                });
+            });
+        </script>
+        {{/ifpage}}
+    </body>
+</html>

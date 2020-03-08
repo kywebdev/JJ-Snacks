@@ -1,0 +1,838 @@
+home-hero-slide:
+  -
+    img-desktop: hero-slide-1-desktop.jpg
+    img-tablet: hero-slide-1-tablet.jpg
+    img-mobile: hero-slide-1-mobile.jpg
+    heading: 1000 SKUs <br />and Still Counting
+    text: As the nation’s leader in providing nutritious and affordable niche snack foods to foodservice and retail supermarket outlets across the U.S., we at J&J Snack Foods pride ourselves on crafting an ever-evolving portfolio of notable, irresistible, world-renowned brands as unique as the fans that love them.
+  -
+    img-desktop: hero-slide-2-desktop.jpg
+    img-tablet: hero-slide-2-tablet.jpg
+    img-mobile: hero-slide-2-mobile.jpg
+    heading: As Seen <br />Everywhere
+    text: C-Stores. QSRs. Malls. Hotels. College campuses. Fast casual restaurants. Supermarkets. Fridges across the country. What do these things have in common? You guessed it – J&J snack products. We’re not saying we’re everywhere, but you would be hard pressed to not find one our products on menus, in freezers, or in happy bellies.
+    btn: See our line-up
+    link: products.html
+  -
+    img-desktop: hero-slide-3-desktop.jpg
+    img-tablet: hero-slide-3-tablet.jpg
+    img-mobile: hero-slide-3-mobile.jpg
+    heading: Over $1 Billion in Revenue and over 48 straight years of growth
+    text: Just how does a company grow from being a purchase at a court auction to being placed on the Forbes Best Small Companies list seven times? We seem to have the recipe.
+    btn: See our timeline
+    link: investors.html
+
+timeline-year-slide:
+  -
+    data-slide: 1
+    link: about-us.html#corporate-timeline
+    year: 1970
+  -
+    data-slide: 4
+    link: about-us.html#corporate-timeline
+    year: 1980
+  -
+    data-slide: 5
+    link: about-us.html#corporate-timeline
+    year: 1990
+  -
+    data-slide: 6
+    link: about-us.html#corporate-timeline
+    year: 2000
+  -
+    data-slide: 7
+    link: about-us.html#corporate-timeline
+    year: 2010
+  -
+    data-slide: 1
+    link: about-us.html#corporate-timeline
+    year: 1970
+  -
+    data-slide: 4
+    link: about-us.html#corporate-timeline
+    year: 1980
+  -
+    data-slide: 5
+    link: about-us.html#corporate-timeline
+    year: 1990
+  -
+    data-slide: 6
+    link: about-us.html#corporate-timeline
+    year: 2000
+  -
+    data-slide: 7
+    link: about-us.html#corporate-timeline
+    year: 2010
+
+timeline-slide:
+  -
+    data-slide: 1
+    year: 1971
+    desc: '<p>Gerald B. Shreiber raises his hand in court and purchases the assets of J&J Pretzel Co. at a bankruptcy auction for $72,100.</p><p>J&J Snack Foods Corp. is established in Pennsauken, New Jersey. At the time, the company has eight employees and sales of $400,000.</p>'
+    img: slide-placeholder
+  -
+    data-slide: 1
+    year: 1974
+    desc: '<p>Sales break the $1 million mark.</p><p>J&J introduces animated carousel display cases for soft pretzels.</p>'
+  -
+    data-slide: 1
+    year: 1975
+    desc: '<p>Sales break the $2 million mark.</p><p>The Pennsauken plant is expanded, and production capacity is doubled.</p>'
+  -
+    data-slide: 2
+    year: 1980
+    desc: '<p>Something big happened.</p>'
+    img: slide-placeholder
+  -
+    data-slide: 3
+    year: 1990
+    desc: '<p>Something big happened.</p>'
+    img: slide-placeholder
+  -
+    data-slide: 4
+    year: 2000
+    desc: '<p>Something big happened.</p>'
+  -
+    data-slide: 5
+    year: 2010
+    desc: '<p>Something big happened.</p>'
+    img: slide-placeholder
+
+our-brands-filter:
+  -
+    label: All
+    id: all
+    checked: checked
+  -
+    label: Bakery
+    id: bakery
+  -
+    label: Retail
+    id: retail
+  -
+    label: Frozen Beverage
+    id: frozen
+  -
+    label: Food Service
+    id: foodservice
+
+our-brands-slide:
+  -
+    filters: all bakery
+    img: super-pretzel.png
+    alt: Super Pretzel Soft Pretzels
+  -
+    filters: all foodservice
+    img: luigis.png
+    alt: Luigi's Real Italian Ice
+  -
+    filters: all bakery
+    img: funnel-cake.png
+    alt: The Factory Funnel Cake
+  -
+    filters: all retail
+    img: sour-patch.png
+    alt: Sour Patch Kids
+  -
+    filters: all bakery
+    img: labriola.png
+    alt: Labriola Artisan Breads
+  -
+    filters: all frozen
+    img: icee.png
+    alt: ICEE
+  -
+    filters: all bakery
+    img: hill-and-valley.png
+    alt: Hill & Valley Premium Bakery
+  -
+    filters: all frozen
+    img: minute-maid.png
+    alt: Minute Maid
+
+homepage-cards:
+  -
+    heading: Join The Team
+    bg-img: contract-manufacturing
+    text: <p>Join our family of over 4200 employees that make J&J Snack Foods the greatest producers and distributors of snacks on planet earth.</p>
+    btn-label: Submit your resume
+    btn-color: gold
+    btn-link: about.html
+  -
+    heading: Contract Manufacturing
+    bg-img: contract-manufacturing
+    text: <p>Whether you have a sweet dream, or a savory one, J&J Snacks Contract Manufacturing can deliver whatever your brain can cook up.</p>
+    btn-label: Learn more
+    btn-color: red
+    btn-link: contract-manufacturing.html
+
+homepage-news-card:
+  -
+    date: December 2018
+    heading: J&J Snack Foods Corp. Announces Increase in Quarterly Cash Dividend
+    read-label: Read
+    link: article.html
+  -
+    heading: Final <br />Quarter <br />Reporting <br />2018
+    read-label: View
+    link: article.html
+  -
+    date: January 2019
+    heading: Earnings Announcements for January 10, 2019
+    read-label: Read
+    link: article.html
+
+snack-type:
+  -
+    link: bakery
+    img: bakery
+    label: Bakery
+  -
+    link: retail
+    img: retail
+    label: Retail
+  -
+    link: frozen-beverage
+    img: frozen-beverage
+    label: Frozen <br />Beverage
+  -
+    link: food-service
+    img: food-service
+    label: Food <br />Service
+
+bakery-filters:
+  -
+    anchor: country-home
+    filter-label: Breads & Rolls
+  -
+    anchor: mary-b
+    filter-label: Biscuits & Dumplings
+  -
+    anchor: hill-valley
+    filter-label: Cookies, Pies & Muffins
+  -
+    anchor: daddy-rays
+    filter-label: Bars
+
+bakery-products:
+  -
+    img: country-home
+    desc: With a wide variety of bread, roll and muffin varieties from which to choose, Country Home doughs proof to perfection and then bake up golden brown, with no mixing required.
+    filter: bread
+  -
+    img: labriola
+    desc: Indulge in Labriola artisan and pretzel breads and find out why “Every great meal starts with great bread.”
+    link: http://www.labriolabaking.com
+    filter: bread
+    text-side: right
+  -
+    img: mary-b
+    desc: Made with high-quality ingredients and delivering made-from-scratch taste, Mary B’s Kettle Dumplings and Biscuits are perfect served alone or as part of your favorite recipe.
+    link: https://www.homadefoods.com
+    filter: biscuit
+  -
+    img: hill-valley
+    desc: Imagine what it would be like if your favorite desserts, snacks and breakfast treats were all sugar free or no added sugar. With Hill and Valley, America’s leader in sugar-free and no-sugar-added baked goods, imagine no more.
+    link: http://www.hillandvalley.net
+    filter: cookie
+    text-side: right
+  -
+    img: new-day
+    desc: As if one needs another reason to save room for dessert. With a delectable assortment of thaw and serve brownies, crumb cakes, and adorable little Bundt cakes, New Day Desserts offers a little something for every sweet tooth.
+    filter: cookie
+  -
+    img: daddy-rays
+    desc: Made with delicious ingredients, Daddy Ray’s aren’t just fruit and fig bars; they are the perfect on-the-go snack.
+    link: http://daddyrays.com
+    filter: bar
+    text-side: right
+  -
+    img: heartbar
+    desc: 'Corazonas® HEARTBAR™ — the perfect balance of indulgent treat and healthy snack. Made with whole grain-rolled oats and plant sterols that help lower cholesterol, each Corazonas® HEARTBAR™ is made in accordance with our promise: deliciouood, love of life, healthy hearts.'
+    link: https://www.heartbrandfoods.com
+    filter: bar
+
+retail-filters:
+  -
+    anchor: super-pretzel
+    filter-label: Soft Pretzels
+  -
+    anchor: luigis
+    filter-label: Frozen Novelties
+  -
+    anchor: patio
+    filter-label: Frozen Handhelds
+
+retail-products:
+  -
+    img: super-pretzel
+    desc: We typically don’t throw the word “super” around lightly. But with one bite, you’ll see why SUPERPERTZEL holds the title of uncontested, undisputed king frozen soft pretzels.
+    link: http://superpretzel.com
+    filter: pretzel
+  -
+    img: auntie-annes
+    desc: Bring the delicious taste–not to mention the mouthwatering aroma–of Auntie Anne’s pretzels anywhere, anytime.
+    filter: pretzel
+    text-side: right
+  -
+    img: kim-scotts
+    desc: Handmade with love, and available in an assortment of amazing, ready-to-heat varieties, Kim and Scott’s Gourmet Pretzels are an inspired twist on the traditional pretzel form.
+    link: http://www.kimandscotts.com/index.php
+    filter: pretzel
+  -
+    img: luigis
+    desc: 'Time to #BeMoreSpoontaneous. With Luigi’s Real Italian Ice kids of all ages can abandon boring for fun with America’s #1 Italian ice brand – a fat-free, gluten-free treat since 1978.'
+    link: http://www.luigis.com
+    filter: novelty
+    text-side: right
+  -
+    img: whole-fruit
+    desc: Looking for premium taste at an everyday price? Whole Fruit Frozen Novelties Fruit Bars, Sorbets, Organic Frozen Juice Tubes and Organic Fruit Bars are packed with real fruit, are Non-GMO project verified, and are bursting with refreshment in each bite.
+    link: http://www.wholefruitfrozen.com
+    filter: novelty
+  -
+    img: minute-maid
+    desc: Refreshingly real fruit juice makes Minute Maid Juice Bars and Soft Frozen Lemonade burst with flavor. They’re the perfect treat for the whole family.
+    link: http://www.jjsnack.com/MinuteMaid
+    filter: novelty
+    text-side: right
+  -
+    img: dogsters
+    desc: DOGSTERS, because man’s best friend deserves a delicious, low-fat, low-calorie ice cream just as much as his owner does.
+    link: http://dogstersicecream.com
+    filter: novelty
+  -
+    img: philly-swirl
+    desc: Swirl up your imagination with an assortment of Swirl Stix, Cups, Popperz, and Fruit Dips all with an unexpected combination of flavors. Not enough for ya’? They are also fat free, gluten free and peanut free, and available in more flavors than one can count.
+    link: http://phillyswirl.com
+    filter: novelty
+    text-side: right
+  -
+    img: sour-patch
+    desc: A blast of Sour then Sweet,® these frozen treats feature a sweet base with a unique swirl of Sour Patch Kids’ flavor that’s straight out of the the candy aisle.
+    link: http://www.jjsnack.com/SourPatchKidsFrozen/?gclid=EAIaIQobChMI6Ie3pvmT4QIVlZOzCh2N1AnxEAAYASAAEgIglPD_BwE
+    filter: novelty
+  -
+    img: patio
+    desc: With five delicious Spanish-style flavors, Patio Burritos may just be the biggest fiesta found in your grocer’s freezer. They’re great for a snack or an on-the-go meal.
+    link: http://www.jjsnack.com/Patio/Default.aspx
+    filter: handheld
+    text-side: right
+
+frozen-beverage-filters:
+  -
+    anchor: icee
+    filter-label: ICEE
+  -
+    anchor: arctic-blast
+    filter-label: Arctic Blast
+  -
+    anchor: slush-puppie
+    filter-label: Slush Puppie
+  -
+    anchor: parrot-ice
+    filter-label: Parrot Ice
+
+frozen-beverage-products:
+  -
+    img: icee
+    desc: 'Welcome to the new ICEE age - 50 years long and counting. With an ever evolving selection of flavors including the iconic cherry, blue raspberry and Coca-Cola®, it’s little wonder that ICEE is the #1 frozen beverage brand in America, not to mention the Coldest Drink in Town.™'
+    link: http://www.icee.com
+    filter: icee
+  -
+    img: slush-puppie
+    desc: Crunchy slush with a squirt of time-tested and innovative limited-time flavors is absolutely the reason why SLUSH PUPPiE is the brand that consumers demand the world over.
+    link: http://slushpuppie.com
+    filter: slush
+    text-side: right
+  -
+    img: arctic-blast
+    desc: Dozens of refreshing fruit and soft drink flavors make Artic Blast a go-to choice for kids of all ages craving a refreshing frozen beverage.
+    filter: arctic
+  -
+    img: parrot-ice
+    desc: Available in nine flavors and infused with real fruit purees, Parrot-Ice is perhaps the perfect shelf-stable base for any blended fruit smoothie or frozen cocktail.
+    link: http://slushpuppie.com/products/#parrotice
+    filter: parrot
+    text-side: right
+
+food-service-filters:
+  -
+    anchor: super-pretzel
+    filter-label: Soft Pretzels
+  -
+    anchor: tio-churros
+    filter-label: Churro
+  -
+    anchor: funnel-cake
+    filter-label: Funnel Cakes
+  -
+    anchor: luigis-alternate
+    filter-label: Frozen Novelties
+  -
+    anchor: readi-bake
+    filter-label: Bakery
+  -
+    anchor: supreme-stuffers
+    filter-label: Handhelds
+
+food-service-products:
+  -
+    img: super-pretzel
+    desc: 'America’s #1 selling soft pretzel brand, in sizes ranging from bite-sized to jumbo, will add a ton of fun to any snack offering.'
+    link: http://superpretzel.com
+    filter: pretzel
+  -
+    img: bavarian
+    desc: Fully baked, ready to heat or ready to thaw and serve, great-tasting Bavarian Bakery sticks, rolls and buns are a twist on the ordinary, adding authenticity and taste to any menu.
+    link: http://jjsnackfoodservice.com/our-products/all-pretzels/bavarian-style-softpretzels-rolls
+    filter: pretzel
+    text-side: right
+  -
+    img: pretzel-fillers
+    desc: Hand-twisted with delicious fillings and toppings, Pretzel Fillers provide any foodservice location anywhere a truly gourmet soft pretzel experience.
+    link: http://jjsnackfoodservice.com/our-products/new-products-2/pretzel-fillers-extensions
+    filter: pretzel
+  -
+    img: brauhaus
+    desc: A true Oktoberfest delight! Handmade and rolled to perfection, with an earthy rye flavor, Brauhaus Pretzels make an authentic addition to any snack, appetizer or beer pairing menu.
+    link: http://jjsnackfoodservice.com/our-products/all-pretzels/old-world-style-soft-pretzels
+    filter: pretzel
+    text-side: right
+  -
+    img: labriola
+    desc: Indulge in Labriola artisan and pretzel breads and find out why “Every great meal starts with great bread.”
+    link: http://www.labriolabaking.com
+    filter: pretzel
+  -
+    img: kim-scotts-alternate
+    desc: Handmade with love, and available in an assortment of amazing, ready-to-heat varieties, Kim and Scott’s Gourmet Pretzels are an inspired twist on the traditional pretzel form.
+    link: http://www.kimandscotts.com/index.php
+    filter: pretzel
+    text-side: right
+  -
+    img: federal-pretzel
+    desc: In 1922, Maria Nacho gave Philadelphia a snack that has proven to be a never-ending Philadelphia love story. Now, Federal Pretzel Baking Company is proud to share with the world that same great story in the form of fresh Philly-style pretzels.
+    link: http://www.federalpretzel.biz
+    filter: pretzel
+  -
+    img: tio-churros
+    desc: Available in a variety of sizes and flavors, Tio Pepe’s® Churros are sure to get the taste buds going throughout the day. They’re perfect for pairing with coffee, cappuccino or espresso.
+    link: http://jjsnackfoodservice.com/our-products/churros/tio-pepes-churros
+    filter: churro
+    text-side: right
+  -
+    img: california-churros
+    desc: Hot and fresh, with fillings ranging from Bavarian cream to maple to pumpkin créme, California Churros® are proof that California knows how to fiesta.
+    link: http://jjsnackfoodservice.com/our-products/churros/california-churros
+    filter: churro
+  -
+    img: funnel-cake
+    desc: Add fun to breakfast by creating a signature dessert or a custom menu item of your own with Funnel Cake Factory products. Available as an assortment of pre-made products or as a mix, the possibilities are as limitless as your imagination.
+    link: http://jjsnackfoodservice.com/our-products/funnel-cake-churros/funnel-cakes-fries
+    filter: funnel
+    text-side: right
+  -
+    img: luigis-alternate
+    desc: 'Naturally flavored and free of fat, cholesterol and dairy, Luigi’s is the perfect no-guilt snack. No wonder it’s America’s #1 selling Italian ice brand.'
+    filter: novelty
+  -
+    img: minute-maid
+    desc: Refreshingly real fruit juice makes Minute Maid Juice Bars and Soft Frozen Lemonade burst with flavor. They’re the perfect treat for the whole family.
+    link: http://www.jjsnack.com/MinuteMaid
+    filter: novelty
+    text-side: right
+  -
+    img: whole-fruit
+    desc: Looking for premium taste at an everyday price? Whole Fruit Frozen Novelties Fruit Bars, Sorbets, Organic Frozen Juice Tubes and Organic Fruit Bars are packed with real fruit, are Non-GMO project verified, and are bursting with refreshment in each bite.
+    link: http://www.wholefruitfrozen.com
+    filter: novelty
+  -
+    img: shape-ups
+    desc: Gluten free and kosher certified, seasonally themed Shape Ups® 100 percent frozen juice cups are sure to thrill children and adults alike.
+    link: http://jjsnackfoodservice.com/our-products/frozen-novelties/shape-ups
+    filter: novelty
+    text-side: right
+  -
+    img: readi-bake
+    desc: READI-BAKE cookie doughs, rolls and breads offer everything from classic favorites to on-trend innovations, helping any kitchen or institution create a tasty, upscale line-up that is sure to impress.
+    filter: bakery
+  -
+    img: readi-bake-benefit
+    desc: READI-BAKE BeneFIT® products are delicious whole-grain cookies and rolls, preportioned, ready to bake and made specifically for establishments looking for healthier choices.
+    filter: bakery
+    text-side: right
+  -
+    img: supreme-stuffers
+    desc: Available in various sizes, in both bakeable and fryable varieties, Supreme Stuffers® Savory Filled Pockets pack the perfect slice of pizza in every bite.
+    link: http://jjsnackfoodservice.com/our-products/savory-sandwiches/pizza-stuffed-sandwiches-2
+    filter: handheld
+  -
+    img: sweet-stuffers
+    desc: Perfectly decadent and perfectly sized, these handheld pies feature flavored dough for an extra burst of flavor for both taste buds and menus.
+    link: http://jjsnackfoodservice.com/our-products/sweet-pies/specialty-pies
+    filter: handheld
+    text-side: right
+
+quick-links:
+  -
+    link: financial-news
+    label: News
+  -
+    link: reports
+    label: Reports
+  -
+    link: nasdaq-links
+    label: NASDAQ Links
+  -
+    link: faq
+    label: Investor FAQs
+  -
+    label: SEC Filings
+  -
+    link: governance
+    label: Corporate Governance
+
+press-releases:
+  -
+    date: January 2019
+    title: J & J Snack Foods Schedules First Quarter Conference Call
+  -
+    date: December 2018
+    title: J & J Snack Foods Corp. Announces Increase in Quarterly Cash Dividend
+  -
+    date: October 2018
+    title: Sales and Earnings reported by J & J Snack Foods
+
+financial-news-articles:
+  -
+    filter: all filter1
+    date: February 2019
+    heading: J&J Snack Foods Corp. Announces Quarterly Cash Dividend
+    read-label: Read
+    link: article.html
+  -
+    filter: all filter2
+    date: January 2019
+    heading: J&J Snack Foods Reports First Quarter Sales and Earnings
+    read-label: Read
+    link: article.html
+  -
+    filter: all filter3
+    date: January 2019
+    heading: J&J Snack Foods Schedules First Quarter Conference Call
+    read-label: Read
+    link: article.html
+  -
+    filter: all filter1
+    date: December 2018
+    heading: J&J Snack Foods Corp. Announces Increase in Quarterly Cash Dividend
+    read-label: Read
+    link: article.html
+  -
+    filter: all filter2
+    date: October 2018
+    heading: Sales and Earnings reported by J&J Snack Foods
+    read-label: Read
+    link: article.html
+  -
+    filter: all filter3
+    date: October 2018
+    heading: J&J Snack Foods Schedules Fourth Quarter Conference Call
+    read-label: Read
+    link: article.html
+
+marketing-news-articles:
+  -
+    filter: all filter1
+    date: 2018
+    heading: JJSF Serves Up Fun & Innovative Products at the 2018 IDDBA Show!
+    read-label: Read
+    link: article.html
+  -
+    filter: all filter2
+    date: 2017
+    heading: J&J Snack Foods Corp. Acquires Labriola<sup>®</sup> Baking Company
+    read-label: Read
+    link: article.html
+  -
+    filter: all filter3
+    date: 2017
+    heading: J&J Snack Foods Strengthens its Partnership with General Mills with the Launch of...
+    read-label: Read
+    link: article.html
+  -
+    filter: all filter1
+    date: 2017
+    heading: J&J Snack Foods Continues Innovation with new Soft Pretzels
+    read-label: Read
+    link: article.html
+  -
+    filter: all filter2
+    date: 2016
+    heading: J&J Snack Foods Corp. Acquires Hill & Valley Premium Bakery
+    read-label: Read
+    link: article.html
+  -
+    filter: all filter3
+    date: 2016
+    heading: SUPERPRETZEL Donates $10,000 to Big Brothers Big Sisters of Orange County in...
+    read-label: Read
+    link: article.html
+
+more-news:
+  -
+    date: 2017
+    heading: J&J Snack Foods Corp. Acquires Labriola<sup>®</sup> Baking Company
+    read-label: Read
+    link: article.html
+  -
+    date: 2017
+    heading: J&J Snack Foods Strengthens its Partnership with General Mills with the Launch of...
+    read-label: Read
+    link: article.html
+  -
+    date: 2017
+    heading: J&J Snack Foods Continues Innovation with new Soft Pretzels
+    read-label: Read
+    link: article.html
+
+nasdaq-links:
+  -
+    heading: Get our NASDAQ Quote
+    read-label: View
+  -
+    heading: Get our NASDAQ Analyst Information
+    read-label: View
+  -
+    heading: Get our NASDAQ SEC Filings
+    read-label: View
+  -
+    heading: Get our NASDAQ fundamentals
+    read-label: View
+  -
+    heading: Get our NASDAQ chart
+    read-label: Read
+  -
+    heading: Get our NASDAQ stock report
+    read-label: Read
+  -
+    heading: Get Adobe PDF Reader
+    read-label: View
+  -
+    heading: Get our NASDAQ news
+    read-label: Read
+
+governance-links:
+  -
+    heading: Reporting concerns regarding corporate accounting and auditing practices
+    read-label: Read
+  -
+    heading: J&J Snack Foods Corp. code of ethics for chief executive and senior financial officers
+    read-label: Read
+  -
+    heading: Code of business conduct and ethics for J&J Snack Foods Corp.
+    read-label: Read
+  -
+    heading: J&J Snack Foods Corp. nominating and corporate governance committee charter
+    read-label: Read
+  -
+    heading: J&J Snack Foods Corp. compensation committee charter
+    read-label: Read
+  -
+    heading: J&J Snack Foods Corp. audit committee charter
+    read-label: Read
+
+leaders:
+  -
+    name: Gerald B. Shreiber
+    job-title: Chairman of the Board, President, Chief Executive Officer and Director
+  -
+    name: Dennis G. Moore
+    job-title: Senior Vice President, Chief Financial Officer, Treasurer and Director
+  -
+    name: Robert M. Radano
+    job-title: Senior Vice President, Sales and Chief Operating Officer
+  -
+    name: Dan Fachner
+    job-title: President of the ICEE Company Subsidiary
+  -
+    name: Gerard G. Law
+    job-title: Senior Vice President and Assistant to the President
+
+about-page-cards:
+  -
+    heading: Charity & Corporate Citizenship
+    bg-img: corporate-citizenship
+    text: <p>See how J&J is invested in its communities.</p>
+    btn-label: Learn more
+    btn-color: white
+    btn-link: citizens.html
+  -
+    heading: Where to find J&J Products
+    bg-img: jj-products
+    text: '<div class="list-container">
+            <ul>
+              <li>Business Dining</li>
+              <li>Club Stores</li>
+              <li>Colleges</li>
+              <li>Conveinience Stores</li>
+              <li>Healthcare</li>
+              <li>Independent Restaurants</li>
+              <li>In Store Bakery</li>
+              <li>Mass Merchants</li>
+              <li>Military</li>
+              <li>Movie Theatres</li>
+              <li>National & Regional Restaurant Chains</li>
+              <li>Schools K-12</li>
+              <li>Sports & Entertainment</li>
+              <li>Supermarket & Grocery</li>
+              <li>Theme & Amusement Parks</li>
+            </ul>
+          </div>'
+
+careers-page-cards:
+  -
+    heading: Search Current Opportunities
+    bg-color: '#ECCB34'
+    heading-color: '#ffffff'
+    btn-label: View jobs
+    btn-color: white
+    btn-class: btn--long
+  -
+    heading: Benefits & Culture
+    bg-img: benefits-culture
+    btn-label: View
+    btn-color: white
+    btn-link: benefits-culture.html
+    btn-class: btn--long
+
+month-slide:
+  -
+    data-slide: 1
+    month: April
+  -
+    data-slide: 2
+    month: March
+  -
+    data-slide: 3
+    month: February
+  -
+    data-slide: 4
+    month: January
+  -
+    data-slide: 5
+    month: December
+  -
+    data-slide: 6
+    month: November
+
+employee-slide:
+  -
+    data-slide: 1
+    month: April 2019
+    name: Alana Martinez
+    img: alana-martinez
+    position: Account Rep
+    tenure: 1 year<br />9 months
+    team: Southwest<br />Regional
+  -
+    data-slide: 2
+    month: March 2019
+    name: Josh Davidson
+    img: josh-davidson
+    position: Director of Sales
+    tenure: 2 years<br />6 months
+    team: Northeast<br />Regional
+  -
+    data-slide: 3
+    month: February 2019
+    name: Jessica Knox
+    img: jessica-knox
+    position: Analyst
+    tenure: 4 years<br />1 month
+    team: West Coast<br />Regional
+  -
+    data-slide: 4
+    month: January 2019
+    name: John Doe
+    img: employee-placeholder
+    position: Job Title
+    tenure: 5 years<br />2 months
+    team: Somewhere<br />Regional
+  -
+    data-slide: 4
+    month: December 2018
+    name: Mary Sue
+    img: employee-placeholder
+    position: Job Title
+    tenure: 3 years<br />9 months
+    team: Somewhere<br />Regional
+  -
+    data-slide: 4
+    month: November 2018
+    name: Jane Doe
+    img: employee-placeholder
+    position: Job Title
+    tenure: 2 years<br />11 months
+    team: Somewhere<br />Regional
+
+culture-slide:
+  -
+    img: culture-slide-1
+  -
+    img: culture-slide-2
+  -
+    img: culture-slide-3
+  -
+    img: culture-slide-1
+  -
+    img: culture-slide-2
+  -
+    img: culture-slide-3
+
+social-post:
+  -
+    img: social-post-1
+  -
+    img: social-post-2
+  -
+    img: social-post-3
+  -
+    img: social-post-4
+  -
+    img: social-post-5
+  -
+    img: social-post-6
+  -
+    img: social-post-7
+  -
+    img: social-post-8
+  -
+    img: social-post-9
+
+citizens-cards:
+  -
+    heading: S.A.F.E.
+    bg-color: '#EE2F22'
+    heading-color: '#ffffff'
+    btn-label: Learn more
+    btn-color: white
+    btn-link: http://dogstersicecream.com/what-is-safe
+    btn-new-window: yes
+  -
+    heading: Charities We Support
+    bg-img: jj-products
+    text: '<div class="list-container">
+            <ul>
+              <li>A Dogs Life</li>
+              <li>A Work in Progress</li>
+              <li>A.I.P.A.C.</li>
+              <li>Abington Hospital</li>
+              <li>ALS Association</li>
+              <li>Alley Cat Allies</li>
+              <li>Alley Cat Rescue</li>
+              <li>Almost Home Animal Shelter</li>
+              <li>American Anti-Vivisection Society</li>
+            </ul>
+          </div>'

@@ -1,0 +1,18 @@
+<div class="home-hero-slider">
+    {{#each data.home-hero-slide}}
+    <div class="slide">
+        <div class="home-hero-slider__img">
+            <picture>
+                <source srcset="assets/img/heroes/{{img-desktop}}" media="(min-width: 901px)">
+                <source srcset="assets/img/heroes/{{img-tablet}}" media="(min-width: 551px)">
+                <img src="assets/img/heroes/{{img-mobile}}" alt="" />
+            </picture>
+        </div>
+        <div class="home-hero-slider__text">
+            <h1>{{{heading}}}</h1>
+            <p>{{text}}</p>
+            {{#if btn}}<a href="{{link}}" class="btn btn--white">{{btn}}</a>{{/if}}
+        </div>
+    </div>
+    {{/each}}
+</div>

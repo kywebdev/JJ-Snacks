@@ -1,0 +1,43 @@
+<footer>
+    <div class="section-container">
+        <div class="footer-desktop">
+            {{> footer-links}}
+        </div>
+        <div class="footer-mobile">
+            {{> footer-links}}
+        </div>
+    </div>
+    <div class="section-container">
+        <div class="more-snack-news">
+            <div class="more-snack-news__text">
+                <h4>Want more snack news?</h4>
+                <p>Get the latest financial and marketing news updates from J&J</p>
+            </div>
+            <div class="more-snack-news__btn">
+                <a href="" class="btn btn--white btn--long" data-remodal-target="modal">Subscribe</a>
+            </div>
+        </div>
+        <p class="copyright">&copy;2019 J&J Snack Foods Corp &mdash; All Rights Reserved</p>
+    </div>
+</footer>
+<div class="remodal" data-remodal-id="modal">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <h3>Subscribe to our newsletter</h3>
+    <form class="form">
+        <div class="form-field half">
+            <label>First Name</label>
+            <input type="text" />
+        </div>
+        <div class="form-field half">
+            <label>Last Name</label>
+            <input type="text" />
+        </div>
+        <div class="form-field">
+            <label>Email</label>
+            <input type="email" />
+        </div>
+        <div class="form-field">
+            <input type="submit" value="Sign up" />
+        </div>
+    </form>
+</div>

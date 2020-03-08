@@ -1,0 +1,23 @@
+---
+title: NASDAQ Links
+investors-active: active
+
+hero-class: hero--no-img
+hero-page-name: <a href="investors.html" class="callout-link">Back</a>
+hero-heading: NASDAQ Links
+---
+
+{{> hero}}
+<main class="secondary-page">
+    <div class="section-container">
+        <div class="helpful-resources">
+            <h3>Helpful resources</h3>
+            <p>Financial Information, including a printed copy of our annual report, may be obtained from the NASDAQ website by using the links below.</p>
+        </div>
+    </div>
+    <div class="grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y grid-container news secondary-cards">
+        {{#each data.nasdaq-links}}
+            {{> news-card}}
+        {{/each}}
+    </div>
+</main>

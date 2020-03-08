@@ -1,0 +1,52 @@
+---
+title: News - Financial and Marketing News - JJSF Serves Up Fun & Innovative Products at the 2018 IDDBA Show!
+
+hero-class: hero--short
+hero-img: news
+hero-page-name: News
+hero-heading: Financial and Marketing News
+---
+
+{{> hero}}
+<main class="news-page news-article">
+    {{> filter-bar-news}}
+    <div class="grid-container article-title">
+        <a href="" class="callout-link article-title__back">Back</a>
+        <h3>JJSF Serves Up Fun & Innovative Products at the 2018 IDDBA Show!</h3>
+        <a href="" class="callout-link article-title__next">Next</a>
+    </div>
+    <div class="grid-container article">
+        <div class="article-content">
+            <div class="article-content__content">
+                <p class="article-content__col-heading">June 7, 2018</p>
+                <h1>News Release</h1>
+                <p>Pennsauken, NJ (June 7, 2018) J&J Snack Foods, the proud leader and innovator of the snack food & bakery industries, wants to see you at this year’s IDDBA show! Eager to announce new products and some new looks, there is a lot to be excited about! 2018 has brought J&J Snack Foods various changes; the introduction of new Sweet Stuffers® Premium Pastry Tarts, Labriola® Artisan Pretzel Breads, new manufacturing capabilities, and the rebrand and relaunch of an old favorite, Hill & Valley® Premium Bakery! You’re not going to want to miss out on this one!</p>
+                <p>Introducing premium Pastry Tarts, the newest addition to the Sweet Stuffers® brand! Sweet Stuffers® Pastry Tarts are filled with a generous amount of delicious strawberry puree, sweetened with pure cane sugar, a touch of vanilla flavor and surrounded by a mouth-watering pastry crust. This item is a wonderful addition to any in-store bakery. Developed to provide a great design which gives bakers the freedom to top the Pastry Tarts with a multitude of toppings – provoking creativity within instore bakery’s. Innovative, Instagram-able and blog-worthy, Sweet Stuffers® Pastry Tarts are perfect for any day-part and a great addition to timeless favorite handhelds. A cool new bakery take on an old nostalgic favorite!</p>
+                <p>J&J Snack Foods is proud to announce the newest addition to our brands – Labriola® Artisan Pretzel Breads. This artisan retail ready collection offers a full line of soft pretzel breads to meet any of your meal-time needs. The collection brings deliciously crafted pretzel breads to your table no matter the need, which ranges from; 16 oz. Pretzel Buns, 10.5 oz. Pretzel Breadsticks, 14 oz. Pretzel Slider Buns, and last but definitely not least, 16 oz. Pretzel Demi Rolls. Come join us in your quest for the finest culinary experience and see what Labriola® can bring to your table. As we always say, “Every great meal starts with great bread!”</p>
+                <p>The newest J&J Snack Foods capabilities are savory Sausage Rolls. The Sausage Rolls come in 3 flavorful options of; All Beef, All Beef and Cheese, All Beef, Cheese, and Jalapenos. This item was designed with a soft dough that is pocketed with delectable beef, cheese, and/or jalapenos. These rolls will leave you wanting more!</p>
+                <p>Over 100 million Americans are touched by diabetes – representing $48 billion in buying power. * J&J Snack Foods is proud to announce the rebranding and relaunching of the Hill & Valley Premium Bakery brand, which houses our Sugar Free and No Sugar Added products! The capabilities for Sugar Free and No sugar added are endless with our 150,000 square foot bakery located in Rock Island, IL. Delivering consumers with the same great taste that has been provided for over 30 years. We intend to strengthen our foundation of excellence in Sugar Free and No Sugar Added desserts within the industry. This fresh look signifies our commitment to growth and expansion of the Hill & Valley Premium Bakery brand. The fun doesn’t end here, come see all that J&J Snack Foods has to offer; ranging from soft pretzels, churros, funnel cakes, handheld sandwiches, and more! JJSF is moving forward with new products, new customers, and new channels of distribution, which are growing every day.</p>
+                <p>J&J Snack Foods Corp. is a leader and innovator in the snack food industry, providing nutritional and affordable branded niche snack foods and beverages to foodservice and retail supermarket outlets. Manufactured and distributed nationwide, our principal products include SUPERPRETZEL, BAVARIAN BAKERY and other soft pretzels, ICEE and SLUSH PUPPIE frozen beverages, LUIGI’S, MINUTE MAID frozen juice bars and ices, WHOLE FRUIT sorbet and frozen fruit bars, MARY B’S biscuits and dumplings, DADDY RAY’S fig and fruit bars, TIO PEPE’S, CALIFORNIA CHURROS and OREO Churros, PATIO Burritos and other handheld sandwiches, THE FUNNEL CAKE FACTORY funnel cakes, and several bakery brands within COUNTRY HOME BAKERS and HILL & VALLEY. For more information, please visit <a href="http://www.jjsnack.com">http://www.jjsnack.com</a>.</p>
+                <p><em>*MINUTE MAID is a registered trademark of The Coca-Cola Company.<br />
+                    *OREO and the OREO wafer design are registered trademarks of Mondelez International group, used under license.<br />
+                    *Centers for Disease Control (2011)</em></p>
+            </div>
+            <div class="article-content__contact-info">
+                <p class="article-content__col-heading">Contact</p>
+                <p>Amanda Osorio<br />
+                    J&J Snack Foods Corp.<br />
+                    <a href="mailto:AOsorio@jjsnack.com">AOsorio@jjsnack.com</a></p>
+                <a href="" class="btn btn--black btn--long">Share</a>
+            </div>
+        </div>
+    </div>
+    <div class="more-news">
+        <div class="grid-container">
+            <h3>More News</h3>
+        </div>
+        <div class="grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y grid-container news more-news">
+            {{#each data.more-news}}
+                {{> news-card}}
+            {{/each}}
+        </div>
+    </div>
+</main>

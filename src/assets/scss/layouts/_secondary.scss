@@ -1,0 +1,123 @@
+.secondary-page {
+    .section-container {
+        .container {
+            max-width: 1000px;
+        }
+    }
+    h2 {
+        color: $gray;
+        font-family: $avenir;
+        font-size: 28px;
+        font-weight: normal;
+        margin: 50px 0px 20px;
+
+        @media screen and (max-width: $small) {
+            margin: 40px 0px 20px;
+            font-size: 25px;
+            line-height: 36px;
+        }
+        &:first-of-type {
+            margin-top: 0px;
+
+            @media screen and (max-width: $small) {
+                margin-top: 20px;
+            }
+        }
+    }
+    p, li {
+        color: $black;
+        line-height: 38px;
+
+        @media screen and (max-width: $small) {
+            font-size: 20px;
+            line-height: 36px;
+        }
+        strong {
+            font-weight: 600;
+        }
+    }
+    ul, ol {
+        margin-top: 30px;
+    }
+    li {
+        margin-bottom: 30px;
+
+        @media screen and (max-width: $small) {
+            margin-bottom: 20px;
+        }
+    }
+    a {
+        text-decoration: underline;
+        color: $black;
+
+        &:hover, &:focus, &:active {
+            color: $gold;
+        }
+        &.callout-link {
+            text-decoration: none;
+
+            &:hover, &:focus, &:active {
+                color: $black;
+            }
+        }
+    }
+    .btn {
+        margin-right: 15px;
+        
+        + h2 {
+            margin-top: 70px;
+
+            @media screen and (max-width: $small) {
+                margin-top: 50px;
+            }
+        }
+    }
+    .cell {
+        @media screen and (max-width: $medium) {
+            width: 100% !important;
+        }
+    }
+    .large-6 {
+        &:first-of-type {
+            margin-left: 0px !important;
+        }
+        + .large-6 {
+            margin-right: 0px !important;
+        }
+        @media screen and (max-width: $medium) {
+            margin-left: 0px !important;
+            margin-right: 0px !important;
+        }
+    }
+    .large-12 {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+    h4 {
+        margin-bottom: 20px;
+    }
+    .btn {
+        text-decoration: none;
+        color: $white;
+
+        &:hover, &:active, &:focus {
+            color: $white;
+        }
+    }
+}
+.sitemap {
+    ul {
+        margin-top: 0px;
+    }
+    li {
+        margin-bottom: 10px;
+
+        ul {
+            li {
+                &:last-of-type {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+}

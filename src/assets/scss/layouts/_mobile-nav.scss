@@ -1,0 +1,150 @@
+.mobile-nav {
+    position: fixed;
+    top: 0px;
+    right:0px;
+    display: table;
+    background-color: $black;
+    max-height: 100vh;
+    min-height: 100vh;
+    width: 100%;
+    padding-bottom: 30px;
+    z-index: 1001;
+    -webkit-overflow-scrolling: touch;
+    transform: translateX(100%);
+    transition: .7s ease;
+
+    @media screen and (max-width: $medium) {
+        display: table;
+    }
+    &.is-open {
+        transform: translateX(100%);
+
+        @media screen and (max-width: $medium) {
+            transform: translateX(0%);
+        }
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+            display: block;
+        }
+        &.animate-down {
+            transform: translate(100%, 100vh);
+
+            @media screen and (max-width: $medium) {
+                transform: translate(0%, 100vh);
+            }
+        }
+    }
+    &.animate-down {
+        transform: translate(100%, 100vh);
+    }
+    .close {
+        margin-right: 30px;
+        display: inline-block;
+        position: relative;
+        top: -6px;
+
+        @media screen and (max-width: 450px) {
+            width: 30px;
+        }
+    }
+    &-panel {
+        position: absolute;
+        top: 0px;
+        left:0;
+        background-color: $black;
+        max-height: 100vh;
+        min-height: 100vh;
+        width: 100%;
+        padding-bottom: 130px;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+
+        h1 {
+            color: $white;
+            text-align: left;
+        }
+    }
+    .navigation {
+        height: 60vh;
+        position: relative;
+        margin-top: 89px;
+
+        @media screen and (max-height: 700px) {
+            height: auto;
+            margin-top: 120px;
+        }
+        nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+
+            @media screen and (max-height: 700px) {
+                position: relative;
+                top: auto;
+                transform: none;
+                margin: 30px 0px 55px;
+            }
+            a {
+                display: block;
+                font-family: $adonis;
+                font-size: 48px;
+                font-weight: bold;
+                color: $white;
+                margin-bottom: 20px;
+
+                &:hover, &:active, &:focus {
+                    color: $gold;
+                }
+            }
+        }
+    }
+    .stocks {
+        margin: 0px 0px 40px;
+
+        &__current-stocks {
+            background-color: $white;
+
+            &__nasdaq {
+                p, span {
+                    color: $black !important;
+                }
+            }
+            &__stock-market {
+                h3 {
+                    color: $black;
+                    text-align: center;
+                }
+                p {
+                    text-align: center;
+                }
+            }
+            &__real-time {
+                display: none;
+            }
+        }
+    }
+}
+.mobile-nav-social {
+    ul {
+        margin: 0px;
+
+        li {
+            display: inline-block;
+            margin-right: 40px;
+
+            &:last-of-type {
+                margin-right: 0px;
+            }
+            &:before {
+                display: none;
+            }
+            a {
+                color: $white;
+                font-size: 40px;
+
+                &:hover, &:active, &:focus {
+                    color: $gold;
+                }
+            }
+        }
+    }
+}

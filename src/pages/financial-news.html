@@ -1,0 +1,24 @@
+---
+title: News - Financial and Marketing News
+
+hero-class: hero--short
+hero-img: news
+hero-page-name: News
+hero-heading: Financial and Marketing News
+---
+
+{{> hero}}
+<main class="news-page">
+    {{> filter-bar-news}}
+    <div class="section-container">
+        <h3>Latest Financial News</h3>
+    </div>
+    <div class="grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y grid-container news news-filtering">
+        {{#each data.financial-news-articles}}
+            {{> news-card}}
+        {{/each}}
+    </div>
+    <div class="section-container text-center">
+        <a href="" class="callout-link">View more</a>
+    </div>
+</main>

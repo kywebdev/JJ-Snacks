@@ -1,0 +1,19 @@
+---
+title: Products - Retail Products
+products-active: active
+
+hero-class: hero--short
+hero-img: retail
+hero-page-name: <a href="products.html" class="callout-link">Back</a>
+hero-heading: Retail Products
+---
+
+{{> hero}}
+<main class="products-page">
+    {{> filter-bar-products}}
+    <div class="products">
+    {{#each data.retail-products}}
+        {{> product}}
+    {{/each}}
+    </div>
+</main>

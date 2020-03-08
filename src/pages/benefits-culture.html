@@ -1,0 +1,114 @@
+---
+title: Careers - Benefits & Culture
+careers-active: active
+
+hero-class: hero--no-img
+hero-page-name: <a href="careers.html" class="callout-link">Back</a>
+hero-heading: Benefits & <br />Culture at J&J
+---
+
+{{> hero}}
+<main class="primary-page">
+    <div class="offset-img-right">
+        <div class="section-container">
+            <div class="grid-x">
+                <div class="cell large-5">
+                    <h4>Work Hard.<br />Play Hard.</h4>
+                    <p>Take equal parts delight and mix it with equal parts seriousness and you have a recipe for the unique flavor that is life at J&J Snacks; a recipe that has served us well for the last few decades. Maybe that’s why you’ll find (XX)% of our people have tenures with the company of 10 years or more, and more than a few with over 20. After all, you can’t make the world’s funnest snacks without having a little fun along the way. So besides hearing worlds like “funnest,” you’ll find a culture that shies away from the corporate world for one that is more akin to, well, kin. And like all kin, we constantly push, challenge and support - not just the company, but everyone that makes who we are.</p>
+                </div>
+                <div class="cell large-7"></div>
+            </div>
+        </div>
+        <div class="grid-x">
+            <div class="cell large-5"></div>
+            <div class="cell large-7">
+                <img src="assets/img/benefits-culture-1.jpg" alt="" />
+            </div>
+        </div>
+    </div>
+    <div class="offset-img-left">
+        <div class="section-container">
+            <div class="grid-x">
+                <div class="cell large-7"></div>
+                <div class="cell large-5">
+                    <h4>Benefits package may include:</h4>
+                    <ul>
+                        <li>Paid Holidays and Vacation</li>
+                        <li>Medical</li>
+                        <li>401K</li>
+                        <li>Company Paid Life and AD&D Insurance</li>
+                        <li>Stock Purchase Plan</li>
+                        <li>Nathan Shreiber Scholarship Fund (Tuition Reimbursement)</li>
+                        <li>Flexible Spending Plans</li>
+                        <li>Credit Union Membership</li>
+                        <li>Funeral and Bereavement Leaves</li>
+                        <li>Section 125 Pre-Tax Benefit Contribution Plan</li>
+                        <li>Voluntary Additional Employee Group Life and AD&D Insurance</li>
+                        <li>Voluntary Dependent Group Life and AD&D</li>
+                        <li>Voluntary Dental</li>
+                        <li>Voluntary Vision</li>
+                        <li>Voluntary Short and Long Term Disability</li>
+                        <li>Employee Assistance Program</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="grid-x">
+            <div class="cell large-7">
+                <img src="assets/img/benefits-culture-2.jpg" alt="" />
+            </div>
+            <div class="cell large-5"></div>
+        </div>
+    </div>
+    <div class="company-culture">
+        <div class="section-container">
+            <h4>Company Culture</h4>
+        </div>
+        <div class="culture-slider">
+            {{#each data.culture-slide}}
+            <div class="slide">
+                <img src="assets/img/{{img}}.jpg" alt="" />
+            </div>
+            {{/each}}
+        </div>
+        <div class="section-container">
+            <div class="swipe">
+                <p>Swipe to see more</p>
+            </div>
+        </div>
+    </div>
+    <div class="social-posts">
+        <div class="section-container">
+            <h4>Follow us on social</h4>
+            <div class="social-posts__icons">
+                <a href="https://www.linkedin.com/company/j&j-snack-foods" target="_blank">
+                    <span class="fab fa-linkedin-in"></span>
+                </a>
+                <a href="https://www.instagram.com/jjsnackfoods" target="_blank">
+                    <span class="fab fa-instagram"></span>
+                </a>
+                <a href="https://www.youtube.com/channel/UC-h7-D2pSK6w068HVjC7f4g" target="_blank">
+                    <span class="fab fa-youtube"></span>
+                </a>
+            </div>
+            <div class="grid-x grid-margin-x grid-padding-x grid-margin-y grid-padding-y">
+                {{#each data.social-post}}
+                <div class="cell large-4 medium-6">
+                    <a href="" target="_blank" class="social-posts__img">
+                        <div class="social-posts__img__block" style="background-image: url('assets/img/{{img}}.jpg');"></div>
+                        <div class="social-posts__img__overlay">
+                            <div class="social-posts__img__overlay__container">
+                                <p class="social-posts__img__overlay__likes"><span class="fas fa-heart"></span>33</p>
+                                <p class="social-posts__img__overlay__comments"><span class="fas fa-comment"></span>1</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                {{/each}}
+            </div>
+            <div class="text-center">
+                <a href="" target="_blank" class="btn btn--black">See more on Instagram</a>
+            </div>
+        </div>
+    </div>
+</main>

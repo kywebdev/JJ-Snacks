@@ -1,0 +1,99 @@
+// ----------------------  SITE COLORS  ----------------------
+
+$gold:          #ECCB34;
+$red:           #EE2F22;
+$green:         #50C89C;
+$black:         #231f20;
+$gray:          #C1B9BB;
+$light-gray:    #ECEBE6;
+$white:         #ffffff;
+$error:         $red;
+$success:       $green;
+
+
+// ----------------------  TYPEFACES  ----------------------
+
+// Adonis
+@import url("https://use.typekit.net/sih8tqh.css");
+
+// Avenir Next
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: url('../fonts/style-guide/AvenirNextLTPro-It.eot');
+    src: url('../fonts/style-guide/AvenirNextLTPro-It.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/style-guide/AvenirNextLTPro-It.woff2') format('woff2'),
+        url('../fonts/style-guide/AvenirNextLTPro-It.woff') format('woff'),
+        url('../fonts/style-guide/AvenirNextLTPro-It.ttf') format('truetype'),
+        url('../fonts/style-guide/AvenirNextLTPro-It.svg#AvenirNextLTPro-It') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: url('../fonts/style-guide/AvenirNextLTPro-Bold.eot');
+    src: url('../fonts/style-guide/AvenirNextLTPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/style-guide/AvenirNextLTPro-Bold.woff2') format('woff2'),
+        url('../fonts/style-guide/AvenirNextLTPro-Bold.woff') format('woff'),
+        url('../fonts/style-guide/AvenirNextLTPro-Bold.ttf') format('truetype'),
+        url('../fonts/style-guide/AvenirNextLTPro-Bold.svg#AvenirNextLTPro-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: url('../fonts/style-guide/AvenirNextLTPro-Regular.eot');
+    src: url('../fonts/style-guide/AvenirNextLTPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/style-guide/AvenirNextLTPro-Regular.woff2') format('woff2'),
+        url('../fonts/style-guide/AvenirNextLTPro-Regular.woff') format('woff'),
+        url('../fonts/style-guide/AvenirNextLTPro-Regular.ttf') format('truetype'),
+        url('../fonts/style-guide/AvenirNextLTPro-Regular.svg#AvenirNextLTPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: url('../fonts/style-guide/AvenirNextLTPro-Demi.eot');
+    src: url('../fonts/style-guide/AvenirNextLTPro-Demi.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/style-guide/AvenirNextLTPro-Demi.woff2') format('woff2'),
+        url('../fonts/style-guide/AvenirNextLTPro-Demi.woff') format('woff'),
+        url('../fonts/style-guide/AvenirNextLTPro-Demi.ttf') format('truetype'),
+        url('../fonts/style-guide/AvenirNextLTPro-Demi.svg#AvenirNextLTPro-Demi') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+$adonis:        adonis-web, serif;
+$avenir:        'Avenir Next LT Pro', sans-serif;
+
+
+// ----------------------  BREAKPOINTS  ----------------------
+
+$x-large:   1500px;
+$large:     1200px;
+$medium:    900px;
+$small:     550px;
+
+
+// ----------------------  STYLE GUIDE VARIABLES  ----------------------
+
+// Set these for each project
+
+$primary-color:         $gold;
+$secondary-color:       $red;
+$tertiary-color:        $green;
+$gray-accent:           $gray;
+$heading-color:         $black;
+$heading-font:          $adonis;
+$text-color:            $gray;
+$text-font:             $avenir;
+
+$color1:                $gold;
+$color2:                $red;
+$color3:                $green;
+$color4:                $black;
+$color5:                $gray;
+$color6:                $light-gray;
+$color7:                $white;
+
+$typeface1:             $adonis;
+$typeface2:             $avenir;

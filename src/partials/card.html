@@ -1,0 +1,18 @@
+<div class="cell large-6 card" {{#if bg-color}}style="background-color: {{bg-color}};"{{/if}}>
+    {{#if bg-img}}
+    <div class="card__bg">
+        <picture>
+            <source srcset="assets/img/{{bg-img}}-desktop.jpg" media="(min-width: 551px)">
+            <img src="assets/img/{{bg-img}}-mobile.jpg" alt="" />
+        </picture>
+    </div>
+    {{/if}}
+    <div class="content">
+        <div class="card__overlay{{#if bg-img}} has-bg{{/if}}">
+            <h1 {{#if heading-color}}style="color: {{heading-color}};"{{/if}}>{{{heading}}}</h1>
+            {{#if overlay-img}}<img src="assets/img/{{overlay-img}}" alt="" />{{/if}}
+            {{{text}}}
+            {{#if btn-label}}<a href="{{btn-link}}" {{#if btn-new-window}}target="_blank"{{/if}} class="btn btn--{{btn-color}} {{btn-class}}">{{btn-label}}</a>{{/if}}
+        </div>
+    </div>
+</div>

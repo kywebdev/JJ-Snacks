@@ -1,0 +1,128 @@
+a {
+    font-family: $avenir;
+    font-size: 21px;
+    color: $gold;
+    position: relative;
+    z-index: 1;
+    transition: .2s ease-in-out;
+
+    &:hover, &:active, &:focus {
+        color: darken($gold, 10%);
+        outline: none;
+    }
+}
+.btn {
+    font-family: $text-font;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $white;
+    padding: 18px 25px 15px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+
+    @media screen and (max-width: $small) {
+        font-size: 16px;
+    }
+    &:hover, &:active, &:focus {
+        color: $white;
+    }
+    &--red {
+        background-color: $red;
+    
+        &:hover, &:active, &:focus {
+            background-color: $gold;
+        }
+    }
+    &--green {
+        background-color: $green;
+    
+        &:hover, &:active, &:focus {
+            
+        }
+    }
+    &--gold {
+        background-color: $gold;
+    
+        &:hover, &:active, &:focus {
+            background-color: $black;
+        }
+    }
+    &--white {
+        background-color: $white;
+        color: $black;
+
+        &:hover, &:focus, &:active {
+            background-color: rgba($white, .75);
+            color: $black;
+        }
+    }
+    &--black {
+        background-color: $black;
+        color: $white !important;
+        text-decoration: none !important;
+
+        &:hover, &:focus, &:active {
+            background-color: $gray;
+            color: $white;
+        }
+    }
+    &-center {
+        text-align: center;
+    }
+    &--small {
+        padding: 13px 15px 10px;
+        font-size: 13px;
+        letter-spacing: 2px;
+    }
+    &--long {
+        padding: 18px 70px 15px;
+    }
+}
+.btn-container {
+    .btn {
+        + .btn {
+            margin-left: 30px;
+
+            @media screen and (max-width: 700px) {
+                margin-left: 0px;
+            }
+        }
+    }
+}
+.callout-link {
+    display: inline-block;
+    color: $black;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 30px;
+
+    @media screen and (max-width: $small) {
+        margin-top: 10px;
+    }
+    &:after {
+        display: block;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: $black;
+        position: relative;
+        transition: .3s ease-in-out;
+        top: 0px;
+        opacity: 1;
+    }
+    &:hover, &:focus, &:active {
+        color: $black;
+
+        &:after {
+            top: 20px;
+            opacity: 0;
+        }
+    }
+}

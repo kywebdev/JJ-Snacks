@@ -1,0 +1,15 @@
+<div class="hero{{#if hero-class}} {{hero-class}}{{/if}}">
+    {{#if hero-img}}
+    <picture>
+        <source srcset="assets/img/heroes/hero-{{hero-img}}-desktop.jpg" media="(min-width: 901px)">
+        <source srcset="assets/img/heroes/hero-{{hero-img}}-tablet.jpg" media="(min-width: 551px)">
+        <img src="assets/img/heroes/hero-{{hero-img}}-mobile.jpg" alt="" />
+    </picture>
+    {{/if}}
+    <div class="hero-overlay">
+        <div class="section-container">
+            {{#if hero-page-name}}<p class="hero__page-name">{{{hero-page-name}}}</p>{{/if}}
+            <h1>{{{hero-heading}}}</h1>
+        </div>
+    </div>
+</div>

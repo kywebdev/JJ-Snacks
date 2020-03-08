@@ -1,0 +1,67 @@
+<div class="filter-bar">
+    <div class="section-container">
+        <nav class="nav">
+            <p class="news-type">News type:</p>
+            <ul class="filter-bar__buttons">
+                <li>
+                    <a href="financial-news.html" class="filter-bar__buttons__button{{#ifpage 'financial-news'}} mixitup-control-active{{/ifpage}}">Financial News</a>
+                </li>
+                <li>
+                    <a href="marketing-news.html" class="filter-bar__buttons__button{{#ifpage 'marketing-news' 'article'}} mixitup-control-active{{/ifpage}}">Marketing News</a>
+                </li>
+            </ul>
+            <div class="filter-bar__active-category">
+                <form>
+                    <select>
+                        <option value="/financial-news.html"{{#ifpage 'financial-news'}} selected{{/ifpage}}>Financial News</option>
+                        <option value="/marketing-news.html"{{#ifpage 'marketing-news' 'article'}} selected{{/ifpage}}>Marketing News</option>
+                    </select>
+                </form>
+            </div>
+        </nav>
+        {{#ifpage 'financial-news' 'marketing-news'}}
+        <div class="filter-bar__filter-by">
+            <span>Filter by</span>
+            <ul>
+                <li>
+                    <button data-filter=".filter1">Filter 1</button>
+                </li>
+                <li>
+                    <button data-filter=".filter2">Filter 2</button>
+                </li>
+                <li>
+                    <button data-filter=".filter3">Filter 3</button>
+                </li>
+                <li>
+                    <button data-filter=".all">All Articles</button>
+                </li>
+            </ul>
+        </div>
+        {{/ifpage}}
+        {{#ifpage 'article'}}
+        <a href="" class="callout-link filter-bar__back">Back</a>
+        {{/ifpage}}
+        <div class="filter-bar__pagination">
+            <ul>
+                <li>
+                    <a href="" class="active">1</a>
+                </li>
+                <li>
+                    <a href="">2</a>
+                </li>
+                <li>
+                    <a href="">3</a>
+                </li>
+                <li>
+                    <a href="">4</a>
+                </li>
+                <li>
+                    <a href="">5</a>
+                </li>
+            </ul>
+        </div>
+        {{#ifpage 'article'}}
+        <a href="" class="callout-link filter-bar__next">Next</a>
+        {{/ifpage}}
+    </div>
+</div>

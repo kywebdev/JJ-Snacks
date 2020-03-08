@@ -1,0 +1,54 @@
+.home-intro {
+    padding: 30px 0px 100px;
+    text-align: center;
+
+    @media screen and (max-width: $small) {
+        padding: 30px 0px 70px;
+    }
+    &__scroll {
+        color: $gray;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+        &:hover, &:focus, &:active {
+            color: darken($gray, 10%);
+        }
+    }
+    &__vertical-rule {
+        width: 2px;
+        height: 165px;
+        background-color: $gray;
+        margin: 20px auto 0px;
+        display: block;
+    }
+    h1 {
+        padding-top: 50px;
+    }
+    &__text {
+        font-size: 28px;
+        text-align: center;
+        width: 100%;
+        max-width: 900px;
+        margin: 0px auto;
+
+        @media screen and (max-width: $medium) {
+            font-size: 25px;
+            line-height: 34px;
+        }
+        @media screen and (max-width: $small) {
+            font-size: 22px;
+            line-height: 30px;
+        }
+    }
+}
+.investor-relations {
+    padding: 100px 0px;
+    background-color: $light-gray;
+
+    @media screen and (max-width: $small) {
+        padding: 70px 0px 50px;
+    }
+}

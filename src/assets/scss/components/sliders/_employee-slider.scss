@@ -1,0 +1,270 @@
+.employee-slider {
+    .slick-prev, .slick-next {
+        background-color: transparent;
+
+        &:hover {
+            background-color: transparent;
+        }
+    }
+    .slick-list {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        width: 95% !important;
+        margin-left: calc(2.5% + 60px);
+        overflow: hidden;
+
+        @media screen and (max-width: 1000px) {
+            width: 100% !important;
+            margin-left: 0px;
+        }
+    }
+    .slick-track {
+        display: flex;
+        margin-top: 120px;
+
+        @media screen and (max-width: 1000px) {
+           display: block;
+           margin-top: 20px;
+        }
+    }
+    .slide {
+        padding-top: 2.5vw;
+        transition: .3s ease-in-out;
+        background-color: $white;
+        overflow: hidden;
+        margin-bottom: 220px;
+
+        @media screen and (max-width: 1000px) {
+            padding: 50px 6vw 0px;
+            margin-left: 0px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            box-shadow: none;
+        }
+        &:nth-child(3n + 1) {
+            .employee-info {
+                background-color: $green;
+
+                @media screen and (max-width: 1000px) {
+                    background-color: $red;
+                }
+            }
+            .month {
+                color: $green;
+
+                @media screen and (max-width: 1000px) {
+                    color: $red;
+                }
+            }
+        }
+        &:nth-child(3n + 2) {
+            .employee-info {
+                background-color: $gold;
+
+                @media screen and (max-width: 1000px) {
+                    background-color: $green;
+                }
+            }
+            .month {
+                color: $gold;
+
+                @media screen and (max-width: 1000px) {
+                    color: $green;
+                }
+            }
+        }
+        &:nth-child(3n + 3) {
+            .employee-info {
+                background-color: $red;
+
+                @media screen and (max-width: 1000px) {
+                    background-color: $gold;
+                }
+            }
+            .month {
+                color: $red;
+
+                @media screen and (max-width: 1000px) {
+                    color: $gold;
+                }
+            }
+        }
+        .employee-name {
+            padding: 0vw 4vw;
+        }
+        .employee-info {
+            padding: 90px 6vw 70px;
+            margin-top: -75px;
+            margin-bottom: -50px;
+            width: 120%;
+            transform: rotate(8deg);
+            position: relative;
+            left: -10%;
+            transition: .3s ease-in-out;
+            
+            @media screen and (max-width: 1000px) {
+                padding: 120px 15vw 70px;
+                margin-top: -105px;
+                width: 140%;
+                left: -20%;
+            }
+            &__inner {
+                transform: rotate(-8deg);
+                position: relative;
+                transition: .3s ease-in-out;
+
+                @media screen and (max-width: 1000px) {
+                    margin-bottom: 3vw;
+                }
+                p {
+                    line-height: 28px;
+
+                    @media screen and (max-width: 1000px) {
+                        line-height: 30px;
+                    }
+                }
+            }
+            &__info-cols {
+                display: flex;
+    
+                p {
+                    width: 47.5%;
+                    
+                    &:first-of-type {
+                        margin-right: 5%;
+                    }
+                }
+            }
+        }
+        .month {
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            text-align: center;
+
+            @media screen and (max-width: 1000px) {
+                font-size: 16px;
+            }
+        }
+        h3 {
+            font-size: 37px;
+            line-height: 48px;
+            text-align: center;
+            transition: .3s ease-in-out;
+
+            @media screen and (max-width: 1000px) {
+                font-size: 48px;
+                line-height: 56px;
+            }
+        }
+        img {
+            width: 160px;
+            margin: 0px auto;
+            border-radius: 50%;
+            border: 8px solid $white;
+            box-shadow: 0px 10px 20px rgba($black, .25);
+            position: relative;
+            z-index: 1;
+            transition: .3s ease-in-out;
+
+            @media screen and (max-width: 1000px) {
+                width: 210px;
+            }
+        }
+        p {
+            transition: .3s ease-in-out;
+
+            @media screen and (max-width: 1000px) {
+                font-size: 21px;
+            }
+        }
+        &.slick-current {
+            z-index: 100;
+            margin-top: -60px;
+            margin-bottom: 60px;
+            margin-left: -60px;
+            box-shadow: 0px 10px 30px rgba($black, .3);
+            
+            @media screen and (max-width: 1000px) {
+                padding: 50px 6vw 0px;
+                margin-left: 0px;
+                margin-bottom: 0px;
+                margin-top: 0px;
+                box-shadow: none;
+            }
+            .employee-info {
+                padding: 120px 6vw 70px;
+                margin-top: -105px;
+
+                @media screen and (max-width: 1000px) {
+                    padding: 120px 15vw 70px;
+                    width: 140%;
+                    left: -20%;
+                }
+                &__inner {
+                    p {
+                        line-height: 36px;
+
+                        @media screen and (max-width: 1000px) {
+                            line-height: 30px;
+                        }
+                    }
+                }
+            }
+            p {
+                font-size: 26px;
+
+                @media screen and (max-width: 1000px) {
+                    font-size: 21px;
+                }
+            }
+            .month {
+                font-size: 18px;
+                
+                @media screen and (max-width: 1000px) {
+                    font-size: 16px;
+                }
+            }
+            h3 {
+                font-size: 48px;
+                line-height: 56px;
+            }
+            img {
+                width: 210px;
+            }
+            + .slide {
+                margin-left: -60px;
+                margin-right: 120px;
+
+                @media screen and (max-width: 1000px) {
+                    margin-left: 0px;
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+    .slick-prev {
+        width: 22px;
+        height: 39px;
+
+        &:before {
+            background-image: url('../img/large-slider-arrow-left.png');
+            width: 22px;
+            height: 39px;
+            opacity: 1;
+        }
+    }
+    .slick-next {
+        width: 22px;
+        height: 39px;
+
+        &:before {
+            background-image: url('../img/large-slider-arrow-right.png');
+            width: 22px;
+            height: 39px;
+            opacity: 1;
+        }
+    }
+}

@@ -1,0 +1,153 @@
+.stocks {
+    display: flex;
+    width: 100%;
+    max-width: 1140px;
+    margin: 40px auto 80px;
+
+    @media screen and (max-width: $medium) {
+        margin-bottom: 40px;
+    }
+    &__current-stocks {
+        background-color: $black;
+        width: 100%;
+        display: flex;
+        padding: 20px 50px;
+        
+        @media screen and (max-width: $medium) {
+            padding: 20px;
+        }
+        &__nasdaq {
+            align-self: center;
+
+            h5 {
+                color: $gold;
+                margin-bottom: 7px;
+
+                @media screen and (max-width: $medium) {
+                    margin-bottom: 0px;
+                }
+            }
+            p {
+                font-size: 18px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: $white !important;
+                margin-bottom: 0px !important;
+                text-align: left !important;
+
+                span {
+                    color: $gray;
+                    margin-left: 2px;
+                }
+            }
+        }
+        &__stock-market {
+            align-self: center;
+
+            h3 {
+                color: $white;
+                margin-bottom: 0px;
+                text-align: left;
+
+                @media screen and (max-width: $medium) {
+                    text-align: center;
+                }
+                @media screen and (max-width: 640px) {
+                    font-size: 40px;
+                }
+                @media screen and (max-width: 500px) {
+                    font-size: 30px;
+                }
+            }
+            p {
+                margin-bottom: 0px !important;
+                font-size: 18px;
+                letter-spacing: 1px;
+                margin-top: -5px;
+                text-align: left;
+
+                @media screen and (max-width: $medium) {
+                    text-align: center;
+                }
+                @media screen and (max-width: $small) {
+                    font-size: 16px;
+                }
+                &.stocks-up {
+                    color: $green;
+
+                    .stock-arrow {
+                        display: inline-block;
+                        width: 20px;
+                        height: 16px;
+                        background-image: url('../img/stocks-arrow-up.png');
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        margin: 0px 10px;
+
+                        @media screen and (max-width: $small) {
+                            margin: 0px;
+                            width: 15px;
+                            height: 11px;
+                        }
+                    }
+                }
+                &.stocks-down {
+                    color: $red;
+
+                    .stock-arrow {
+                        display: inline-block;
+                        width: 20px;
+                        height: 16px;
+                        background-image: url('../img/stocks-arrow-down.png');
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        margin: 0px 10px;
+
+                        @media screen and (max-width: $small) {
+                            margin: 0px;
+                            width: 15px;
+                            height: 11px;
+                        }
+                    }
+                }
+            }
+        }
+        &__real-time {
+            align-self: center;
+
+            @media screen and (max-width: $medium) {
+                align-self: auto;
+                margin-top: 25px;
+            }
+            p {
+                color: $white !important;
+                font-size: 18px;
+                margin-top: 15px !important;
+                margin-bottom: 0px !important;
+                text-align: left !important;
+            }
+            .btn--red {
+                margin-top: 0px;
+
+                &:hover, &:active, &:focus {
+                    background-color: $red;
+                }
+            }
+        }
+    }
+    &__img {
+        width: 170px;
+        background-color: $green;
+
+        @media screen and (max-width: $medium) {
+            display: none;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            font-family: 'object-fit: cover;';
+            pointer-events: none;
+        }
+    }
+}

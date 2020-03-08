@@ -1,0 +1,19 @@
+---
+title: Products - Frozen Beverages
+products-active: active
+
+hero-class: hero--short
+hero-img: frozen-beverage
+hero-page-name: <a href="products.html" class="callout-link">Back</a>
+hero-heading: Frozen Beverages
+---
+
+{{> hero}}
+<main class="products-page">
+    {{> filter-bar-products}}
+    <div class="products">
+    {{#each data.frozen-beverage-products}}
+        {{> product}}
+    {{/each}}
+    </div>
+</main>

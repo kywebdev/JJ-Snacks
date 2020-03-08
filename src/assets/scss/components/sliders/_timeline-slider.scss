@@ -1,0 +1,259 @@
+.timeline-slider {
+    .slick-prev, .slick-next {
+        background-color: transparent;
+
+        &:hover {
+            background-color: transparent;
+        }
+    }
+    .slick-list {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        width: 95% !important;
+        margin-left: calc(2.5% + 60px);
+        overflow: hidden;
+
+        @media screen and (max-width: 1000px) {
+            width: 100% !important;
+            margin-left: 0px;
+        }
+    }
+    .slick-track {
+        display: flex;
+        margin-top: 120px;
+
+        @media screen and (max-width: 1000px) {
+           display: block;
+           margin-top: 20px;
+        }
+    }
+    .slide {
+        transition: .3s ease-in-out;
+        height: 700px;
+        overflow-y: hidden;
+
+        @media screen and (max-width: 1000px) {
+            height: auto;
+            overflow: auto;
+        }
+        &:nth-child(5n + 1) {
+            background-color: $red;
+
+            @media screen and (max-width: 1000px) {
+                background-color: $green;
+            }
+            .year-intro {
+                color: $white;
+            }
+        }
+        &:nth-child(5n + 2) {
+            background-color: $black;
+
+            @media screen and (max-width: 1000px) {
+                background-color: $white;
+            }
+            p {
+                color: $white;
+
+                @media screen and (max-width: 1000px) {
+                    color: $black;
+                }
+            }
+            .year-intro {
+                color: $gray;
+            }
+            .year-next {
+                color: $white;
+
+                @media screen and (max-width: 1000px) {
+                    color: $black;
+                }
+                &:focus, &:active {
+                    color: $white;
+
+                    @media screen and (max-width: 1000px) {
+                        color: $black;
+                    }
+                }
+                &:after {
+                    background-color: $white;
+
+                    @media screen and (max-width: 1000px) {
+                        background-color: $black;
+                    }
+                }
+            }
+        }
+        &:nth-child(5n + 3) {
+            background-color: $green;
+
+            @media screen and (max-width: 1000px) {
+                background-color: $gold;
+            }
+            .year-intro {
+                color: $white;
+            }
+        }
+        &:nth-child(5n + 4) {
+            background-color: $white;
+
+            @media screen and (max-width: 1000px) {
+                background-color: $red;
+            }
+            .year-intro {
+                color: $gray;
+
+                @media screen and (max-width: 1000px) {
+                    color: $white;
+                }
+            }
+        }
+        &:nth-child(5n + 5) {
+            background-color: $gold;
+
+            @media screen and (max-width: 1000px) {
+                background-color: $black;
+            }
+            .year-intro {
+                color: $white;
+
+                @media screen and (max-width: 1000px) {
+                    color: $gray;
+                }
+            }
+            p {
+                @media screen and (max-width: 1000px) {
+                    color: $white;
+                }
+            }
+            .year-next {
+                @media screen and (max-width: 1000px) {
+                    color: $white;
+                }
+
+                &:focus, &:active {
+                    @media screen and (max-width: 1000px) {
+                        color: $white;
+                    }
+                }
+                &:after {
+                    @media screen and (max-width: 1000px) {
+                        background-color: $white;
+                    }
+                }
+            }
+        }
+        .year-intro {
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 0px;
+
+            @media screen and (max-width: 1000px) {
+                font-size: 16px;
+            }
+        }
+        .year {
+            font-family: $adonis;
+            font-weight: bold;
+            font-size: 80px;
+            line-height: 85px;
+            margin-bottom: 30px;
+            margin-top: 20px;
+
+            @media screen and (max-width: 1000px) {
+                font-size: 50px;
+                margin-bottom: 20px;
+                line-height: 55px;
+                margin-top: 10px;
+            }
+        }
+        p {
+            transition: .3s ease-in-out;
+
+            @media screen and (max-width: 1000px) {
+                font-size: 21px;
+            }
+            &:last-of-type {
+                margin-bottom: 0px;
+            }
+        }
+        .year-next {
+            pointer-events: none;
+
+            @media screen and (max-width: 1000px) {
+                margin-top: 30px;
+            }
+            &:focus, &:active {
+                color: $black;
+            }
+        }
+        &.slick-current {
+            z-index: 100;
+            margin-top: -60px;
+            margin-bottom: 60px;
+            margin-left: -60px;
+            box-shadow: 0px 10px 30px rgba($black, .3);
+            height: 820px;
+            overflow-y: auto;
+            
+            @media screen and (max-width: 1000px) {
+                margin-left: 0px;
+                margin-bottom: 0px;
+                margin-top: 0px;
+                box-shadow: none;
+                height: auto;
+                overflow-y: auto;
+            }
+            + .slide {
+                margin-left: -60px;
+                margin-right: 120px;
+
+                @media screen and (max-width: 1000px) {
+                    margin-left: 0px;
+                    margin-right: 0px;
+                }
+            }
+            .year-next {
+                pointer-events: initial;
+            } 
+        }
+    }
+    &__img {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+    &__info {
+        padding: 3vw;
+
+        @media screen and (max-width: 1000px) {
+            padding: 50px 50px 75px;
+        }
+    }
+    .slick-prev {
+        width: 22px;
+        height: 39px;
+
+        &:before {
+            background-image: url('../img/large-slider-arrow-left.png');
+            width: 22px;
+            height: 39px;
+            opacity: 1;
+        }
+    }
+    .slick-next {
+        width: 22px;
+        height: 39px;
+
+        &:before {
+            background-image: url('../img/large-slider-arrow-right.png');
+            width: 22px;
+            height: 39px;
+            opacity: 1;
+        }
+    }
+}

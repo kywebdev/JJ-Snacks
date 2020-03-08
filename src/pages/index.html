@@ -1,0 +1,36 @@
+---
+title: Home
+our-brands-title: Our Snack Food & Beverage Brands
+---
+
+{{> homepage-hero-slider}}
+<div class="grid-x grid-margin-x home-intro">
+    <div class="section-container">
+        <a href="#scroll-to" class="home-intro__scroll">Scroll down</a>
+        <span class="home-intro__vertical-rule"></span>
+        <h1 id="scroll-to">Born of ashes, dusted by destiny.</h1>
+        <p class="home-intro__text">Just how does a company grow from being a purchase at a court auction to being placed on the Forbes Best Small Companies list seven times? We seem to have the recipe.</p>
+        {{> timeline-year-slider}}
+        <a href="about-us.html#corporate-timeline" class="btn btn--red">See Our Timeline</a>
+    </div>
+</div>
+{{> our-brands}}
+<div class="grid-x cards homepage-cards">
+    {{#each data.homepage-cards}}
+        {{> card}}
+    {{/each}}
+</div>
+<div class="grid-x grid-margin-x investor-relations">
+    <div class="section-container">
+        <h1>Investor Relations</h1>
+        {{> stocks}}
+    </div>
+    <div class="grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y grid-container news homepage-news">
+        {{#each data.homepage-news-card}}
+            {{> news-card}}
+        {{/each}}
+        <div class="cell text-center">
+            <a href="financial-news.html" class="callout-link">More News &amp; Numbers</a>
+        </div>
+    </div>
+</div>

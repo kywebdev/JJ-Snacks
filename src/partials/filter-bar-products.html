@@ -1,0 +1,46 @@
+<div class="filter-bar">
+    <div class="section-container">
+        <nav class="nav tabs">
+            <ul class="filter-bar__buttons -primary">
+            {{#ifpage 'bakery'}}
+                {{#each data.bakery-filters}}
+                <li>
+                    <a href="#{{anchor}}" class="filter-bar__buttons__button">{{filter-label}}</a>
+                </li>
+                {{/each}}
+            {{/ifpage}}
+            {{#ifpage 'retail'}}
+                {{#each data.retail-filters}}
+                <li>
+                    <a href="#{{anchor}}" class="filter-bar__buttons__button">{{filter-label}}</a>
+                </li>
+                {{/each}}
+            {{/ifpage}}
+            {{#ifpage 'frozen-beverage'}}
+                {{#each data.frozen-beverage-filters}}
+                <li>
+                    <a href="#{{anchor}}" class="filter-bar__buttons__button">{{filter-label}}</a>
+                </li>
+                {{/each}}
+            {{/ifpage}}
+            {{#ifpage 'food-service'}}
+                {{#each data.food-service-filters}}
+                <li>
+                    <a href="#{{anchor}}" class="filter-bar__buttons__button">{{filter-label}}</a>
+                </li>
+                {{/each}}
+            {{/ifpage}}
+            </ul>
+        </nav>
+        <div class="filter-bar__active-category">
+            <form>
+                <select>
+                    <option value="bakery.html"{{#ifpage 'bakery'}} selected{{/ifpage}}>Bakery Products</option>
+                    <option value="retail.html"{{#ifpage 'retail'}} selected{{/ifpage}}>Retail Products</option>
+                    <option value="frozen-beverage.html"{{#ifpage 'frozen-beverage'}} selected{{/ifpage}}>Frozen Beverages</option>
+                    <option value="food-service.html"{{#ifpage 'food-service'}} selected{{/ifpage}}>Food Service Products</option>
+                </select>
+            </form>
+        </div>
+    </div>
+</div>

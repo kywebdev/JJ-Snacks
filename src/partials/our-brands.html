@@ -1,0 +1,20 @@
+<div class="grid-x grid-margin-x our-brands">
+    <div class="grid-container">
+        <h3>{{our-brands-title}}</h3>
+        <form class="our-brands-filters">
+                {{#each data.our-brands-filter}}
+                <div>
+                    <input type="radio" id="{{id}}" name="brands" value="{{id}}" {{checked}}>
+                    <label for="{{id}}">{{label}}</label>
+                </div>
+                {{/each}}
+        </form>
+        <div class="our-brands-slider">
+            {{#each data.our-brands-slide}}
+            <div class="slide {{filters}}">
+                <img src="assets/img/{{img}}" alt="{{alt}}" />
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>

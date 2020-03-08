@@ -1,0 +1,19 @@
+---
+title: Products - Food Service Products
+products-active: active
+
+hero-class: hero--short
+hero-img: food-service
+hero-page-name: <a href="products.html" class="callout-link">Back</a>
+hero-heading: Food Service Products
+---
+
+{{> hero}}
+<main class="products-page">
+    {{> filter-bar-products}}
+    <div class="products">
+    {{#each data.food-service-products}}
+        {{> product}}
+    {{/each}}
+    </div>
+</main>

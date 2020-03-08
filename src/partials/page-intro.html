@@ -1,0 +1,11 @@
+<div class="page-intro">
+    <div class="section-container">
+        {{#if intro-heading}}<h3>{{intro-heading}}</h3>{{/if}}
+        {{#ifpage 'investors'}}
+            {{> quick-links}}
+            {{> stocks}}
+        {{/ifpage}}
+        <p class="page-intro__text">{{intro-text}}</p>
+        {{{intro-copy}}}
+    </div>
+</div>

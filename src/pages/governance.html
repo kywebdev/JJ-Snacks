@@ -1,0 +1,17 @@
+---
+title: Corporate Governance
+investors-active: active
+
+hero-class: hero--no-img
+hero-page-name: <a href="investors.html" class="callout-link">Back</a>
+hero-heading: Corporate Governance
+---
+
+{{> hero}}
+<main class="secondary-page">
+    <div class="grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y grid-container news secondary-cards">
+        {{#each data.governance-links}}
+            {{> news-card}}
+        {{/each}}
+    </div>
+</main>

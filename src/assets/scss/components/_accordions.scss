@@ -1,0 +1,97 @@
+.accordion-section {
+    margin-top: 50px;
+    
+    @media screen and (max-width: $medium) {
+        margin-top: 30px;
+    }
+    .callout-link {
+        color: $gold;
+        text-decoration: none;
+        margin-bottom: 30px;
+
+        &:after {
+            background-color: $gold;
+        }
+    }
+}
+.accordion {
+    margin-bottom: 30px;
+    
+    &-item {
+        border-bottom: 1px solid $black;
+
+        &__title {
+            cursor: pointer;
+            margin-bottom: 0px;
+            padding: 20px 50px 20px 0px;
+            position: relative;
+            transition: .2s ease-in-out;
+
+            &:hover {
+                color: $green;
+            }
+            &:after {
+                display: inline-block;
+                content: '';
+                width: 38px;
+                height: 20px;
+                background-image: url('../img/accordion-arrow-black.svg');
+                background-repeat: no-repeat;
+                position: absolute;
+                top: 33px;
+                right: 0px;
+                transition: .3s ease;
+
+                @media screen and (max-width: $small) {
+                    top: 27px;
+                }
+            }
+        }
+        &__content {
+            max-height: 0em;
+            overflow: hidden;
+            transition: .5s ease;
+            padding: 0px;
+
+            p {
+                line-height: 42px !important;
+            }
+            .pill {
+                background-color: $red;
+                padding: 9px 15px 5px;
+                border-radius: 20px;
+                color: $white;
+                margin-left: 30px;
+                font-size: 16px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                position: relative;
+                top: -2px;
+                text-decoration: none;
+                transition: .2s ease-in-out;
+
+                &:hover, &:focus, &:active {
+                    color: $white;
+                    background-color: rgba($red, .7);
+                }
+            }
+            .btn {
+                &:last-of-type {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        &.is-open {
+            .accordion-item__title {
+                &:after {
+                    transform: rotate(180deg);
+                }
+            }
+            .accordion-item__content {
+                max-height: 20em;
+                padding: 10px 0px;
+            }
+        }
+    }
+}

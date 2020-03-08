@@ -1,0 +1,107 @@
+---
+title: Careers
+careers-active: active
+
+hero-img: careers
+hero-page-name: Careers
+hero-heading: Careers at J&J Snack Foods
+---
+
+{{> hero}}
+<main class="primary-page">
+    <div class="section-container">
+        <div class="grid-x">
+            <div class="cell large-8">
+                <h3>Careers</h3>
+                <p>Join our family of over 4200 employees that make J&J Snack Foods greatest producers and distributers of snacks on planet earth.</p>
+                <p>Whether you’re searching for a job in marketing, finance and sales, or a manufacturing job, we’re always on the lookout for people passionate about creating the absolute best snacks, frozen beverages and frozen novelties imaginable.</p>
+                <p>Please use the tools below to find listings at our corporate offices or regional facilities nationwide.</p>
+            </div>
+            <div class="cell large-4">
+                <h5>Upload Your Resume</h5>
+                <p>Please submit your resume in Microsoft Word format so that it is easily accessible to the Recruiting Team.</p>
+                <p>EOE/M/F/D/V</p>
+                <a href="" class="btn btn--black">Upload resume</a>
+            </div>
+        </div>
+    </div>
+    <div class="grid-x cards careers-cards">
+        {{#each data.careers-page-cards}}
+            {{> card}}
+        {{/each}}
+    </div>
+    <div class="employee-spotlight">
+        <div class="section-container">
+            <h1>Employee Spotlight</h1>
+            {{> month-slider}}
+        </div>
+        <div class="grid-container">
+            <div class="employee-slider">
+                {{#each data.employee-slide}}
+                <div class="slide" data-slide="{{data-slide}}">
+                    <div class="employee-name">
+                        <p class="month">{{month}}</p>
+                        <h3>{{name}}</h3>
+                        <img src="assets/img/{{img}}.jpg" alt="" />
+                    </div>
+                    <div class="employee-info">
+                        <div class="employee-info__inner">
+                            <p><strong>Position</strong><br />
+                                {{position}}</p>
+                            <div class="employee-info__info-cols">
+                                <p><strong>Tenure</strong><br />
+                                {{{tenure}}}</p>
+                                <p><strong>Team</strong><br />
+                                {{{team}}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+            <div class="swipe">
+                <p>Swipe to see more</p>
+            </div>
+        </div>
+    </div>
+    <div class="grid-x cards stats-cards">
+        <div class="cell large-6 card" style="background-color: #50C89C;">
+            <div class="content">
+                <div class="card__overlay">
+                    <h1 style="color: #ffffff;">Locations & Teams</h1>
+                    <div class="list-container">
+                        <ul>
+                            <li><a href="https://www.google.com/maps/place/California+Churros+Corporation/@34.057664,-117.3099737,17z/data=!3m1!4b1!4m5!3m4!1s0x80dcacfb9db1b01f:0x44b1d766ec36219d!8m2!3d34.057664!4d-117.307785" target="_blank">Colton, CA</a></li>
+                            <li><a href="https://www.google.com/maps/place/Icee+Co/@34.0512841,-117.5636607,17z/data=!3m1!4b1!4m5!3m4!1s0x80c34a9d5e7f3d95:0xb2610566d66d70d1!8m2!3d34.0512841!4d-117.561472" target="_blank">Ontario, CA</a></li>
+                            <li><a href="https://www.google.com/maps/place/J+%26+J+Snack+Foods/@33.9937047,-118.208341,17z/data=!4m13!1m7!3m6!1s0x80c2c92acb14cb59:0xdf99475a3ec78e36!2s5353+S+Downey+Rd,+Vernon,+CA+90058!3b1!8m2!3d33.9937047!4d-118.2061523!3m4!1s0x80c2c92acb14cb59:0xb0fce7a7f1497546!8m2!3d33.9937297!4d-118.206047" target="_blank">Vernon, CA</a></li>
+                            <li><a href="https://www.google.com/maps/place/Hom%2FAde+Foods+Inc/@30.4134205,-87.2160012,17z/data=!3m1!4b1!4m5!3m4!1s0x8890c0ae43778745:0xace98bc34f3e1fba!8m2!3d30.4134205!4d-87.2138125" target="_blank">Pensacola, FL</a></li>
+                            <li><a href="https://www.google.com/maps/place/Philly+Swirl+Inc/@27.953057,-82.4309887,17z/data=!3m1!4b1!4m5!3m4!1s0x88c2c5aa5098c337:0x21de165458c6ba1!8m2!3d27.953057!4d-82.4288" target="_blank">Tampa, FL</a></li>
+                            <li><a href="https://www.google.com/maps/place/Country+Home+Bakers/@33.7350387,-84.4096367,17z/data=!3m1!4b1!4m5!3m4!1s0x88f50312900f7669:0xf27573a87a186ee7!8m2!3d33.7350387!4d-84.407448" target="_blank">Atlanta, GA</a></li>
+                            <li><a href="https://www.google.com/maps/place/Labriola+Baking+Co/@41.659186,-87.7136987,17z/data=!3m1!4b1!4m5!3m4!1s0x880e3b58bbd94f09:0x6fcdd3d8f989fc58!8m2!3d41.659186!4d-87.71151" target="_blank">Alsip, IL</a></li>
+                            <li><a href="https://www.google.com/maps/place/Hill+%26+Valley+Premium+Bakery/@41.5094027,-90.5434669,17z/data=!3m1!4b1!4m5!3m4!1s0x87e233edda6f9963:0x2e736cde04b77ee2!8m2!3d41.5094027!4d-90.5412782" target="_blank">Rock Island, IL</a></li>
+                            <li><a href="https://www.google.com/maps/place/Daddy+Ray's+Inc/@38.9509056,-90.929773,17z/data=!3m1!4b1!4m5!3m4!1s0x87debfa315b1f795:0xe3d846f40bfda0f0!8m2!3d38.9509056!4d-90.9275843" target="_blank">Moscow Mills, MO</a></li>
+                            <li><a href="https://www.google.com/maps/place/J+%26+J+Snack+Foods/@34.495949,-77.5510257,17z/data=!4m13!1m7!3m6!1s0x89a9a1f05f7c49a9:0x7fcf7cb52de0d9c3!2s312+Sound+Rd,+Holly+Ridge,+NC+28445!3b1!8m2!3d34.495949!4d-77.548837!3m4!1s0x89a9a1f05f7c49a9:0x9fa7313ae9b7a93a!8m2!3d34.495949!4d-77.548837" target="_blank">Holly Ridge, NC</a></li>
+                            <li><a href="https://www.google.com/maps/place/J%26J+Snack+Foods+Corp./@39.8604371,-75.0958576,17z/data=!3m1!4b1!4m5!3m4!1s0x89c6ce5adbc6a9c9:0xa51142798af86599!8m2!3d39.8604371!4d-75.0936689" target="_blank">Bellmawr, NJ</a></li>
+                            <li><a href="https://www.google.com/maps/place/Uptown+Bakeries/@39.7835181,-75.3657927,17z/data=!3m1!4b1!4m5!3m4!1s0x89c6e0b53450cd39:0x66c3aed8f38db2ec!8m2!3d39.7835181!4d-75.363604" target="_blank">Logan Township, NJ</a></li>
+                            <li><a href="https://www.google.com/maps/place/J%26J+Snack+Foods+Corp./@39.9313239,-75.0717104,17z/data=!3m1!4b1!4m5!3m4!1s0x89c6c966634465a3:0xb4961a0773a85a62!8m2!3d39.9313239!4d-75.0695217" target="_blank">Pennsauken, NJ</a></li>
+                            <li><a href="https://www.google.com/maps/place/New+York+Pretzel/@40.70423,-73.9388007,17z/data=!3m1!4b1!4m5!3m4!1s0x89c25bff524233a3:0x4f17fd4d9d60d9f7!8m2!3d40.70423!4d-73.936612" target="_blank">Brooklyn, NY</a></li>
+                            <li><a href="https://www.google.com/maps/place/J%26J+Snackfoods/@45.8178857,-118.429436,17z/data=!4m13!1m7!3m6!1s0x54a256dc767c253d:0x6f27082f0609faf3!2s1+N+Railroad+St,+Weston,+OR+97886!3b1!8m2!3d45.8178857!4d-118.4272474!3m4!1s0x54a256dc767c253d:0xc81010d3f38c5ec8!8m2!3d45.8178857!4d-118.4272473" target="_blank">Weston, OR</a></li>
+                            <li><a href="https://www.google.com/maps/place/Mia+Products/@41.3630787,-75.7140156,17z/data=!3m1!4b1!4m5!3m4!1s0x89c4df8cd8011b8f:0xf729906488100f2c!8m2!3d41.3630787!4d-75.7118269" target="_blank">Avoca, PA</a></li>
+                            <li><a href="https://www.google.com/maps/place/Bakers+Best+Snack+Food+Corporation/@40.287491,-75.2832487,17z/data=!3m1!4b1!4m5!3m4!1s0x89c6a11ae3e360fb:0xb52fa236049b3b9d!8m2!3d40.287491!4d-75.28106" target="_blank">Hatfield, PA</a></li>
+                            <li><a href="https://www.google.com/maps/place/Texas+Twist/@32.9553226,-96.8791658,17z/data=!3m1!4b1!4m5!3m4!1s0x864c26f5749219c9:0xbbc6a0a65728d7fd!8m2!3d32.9553226!4d-96.8769771" target="_blank">Carrollton, TX</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell large-6 card" style="background-color: #ffffff;">
+            <div class="content">
+                <div class="card__overlay">
+                    <div class="map-container">
+                        {{> svg-map}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

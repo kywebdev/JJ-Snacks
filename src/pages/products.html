@@ -1,0 +1,36 @@
+---
+title: Products
+products-active: active
+
+hero-img: products
+hero-page-name: Products
+hero-heading: J&J Snack Foods Products &amp; Brands
+
+intro-heading: Our Portfolio
+intro-text: At J&J Snacks, our job is making things that make people smile. Well, we have more jobs than that, but that is a pretty big one.
+intro-copy: <p>Our ever-evolving portfolio of frozen beverages, frozen novelties, and baked goods includes soft pretzels, frozen beverages, frozen juice treats and desserts, stuffed sandwiches, burritos, churros, fruit pies, funnel cakes, cookies and other snack foods and drinks are reflective of a wide range of consumer tastes and trends.</p><p>So if you want to serve up some fun, satisfy a craving, tame a sweet tooth or just have a snack, we’ve confident that we got you covered.</p>
+
+our-brands-title: Our Brands
+---
+
+{{> hero}}
+<main>
+    {{> page-intro}}
+    <div class="grid-x snack-types">
+        {{#each data.snack-type}}
+        <div class="cell large-3 medium-6 snack-types__type">
+            <a href="{{link}}.html">
+                <div class="snack-types__type__img">
+                    <img src="assets/img/{{img}}.jpg" alt="" />
+                </div>
+                <div class="snack-types__type__overlay">
+                    <h3>{{{label}}}</h3>
+                </div>
+            </a>
+        </div>
+        {{/each}}
+    </div>
+    <div class="our-brands-products">
+        {{> our-brands}}
+    </div>
+</main>

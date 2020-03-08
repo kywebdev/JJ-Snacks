@@ -1,0 +1,21 @@
+<div class="products__product {{filter}}" id="{{img}}">
+    <div class="products__product__img">
+        <picture>
+            <source srcset="assets/img/products/{{img}}-desktop.jpg" media="(min-width: 900px)">
+            <source srcset="assets/img/products/{{img}}-tablet.jpg" media="(min-width: 651px)">
+            <img src="assets/img/products/{{img}}-mobile.jpg" alt="" />
+        </picture>
+    </div>
+    <div class="products__product__text">
+        <div class="section-container {{text-side}}">
+            <div class="grid-x">
+                <div class="cell medium-5">
+                    <img src="assets/img/logos/{{img}}-logo.png" alt="" />
+                    <p>{{desc}}</p>
+                    {{#if link}}<a href="{{link}}" target="_blank" class="btn btn--white">Visit website</a>{{/if}}
+                </div>
+                <div class="cell medium-7"></div>
+            </div>
+        </div>
+    </div>
+</div>
