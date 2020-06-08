@@ -3,7 +3,7 @@
 
 ## List of templates
 
-- [Homepage](https://kywebdev.github.io/JJ-Snacks/JJ-Snacks/index.html)
+- [Homepage](https://kywebdev.github.io/JJ-Snacks/index.html)
     - [Contract Manufacturing](https://kywebdev.github.io/JJ-Snacks/contract-manufacturing.html)
 - [Products](https://kywebdev.github.io/JJ-Snacks/products.html)
     - [Bakery Products](https://kywebdev.github.io/JJ-Snacks/bakery.html)
