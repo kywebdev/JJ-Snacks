@@ -152,12 +152,12 @@ our-brands-slide:
 
 homepage-cards:
   -
-    heading: Join The Team
-    bg-img: contract-manufacturing
-    text: <p>Join our family of over 4200 employees that make J&J Snack Foods the greatest producers and distributors of snacks on planet earth.</p>
-    btn-label: Submit your resume
+    heading: Slush Puppie<sup>&reg;</sup>
+    overlay-img: slush-puppies.png
+    text: <p>A slushy drink famous for the squirt of flavor. The crunchy slush in delicious fruit flavors brings out the kid in everyone.</p>
+    btn-label: View Product
     btn-color: gold
-    btn-link: about.html
+    btn-link: frozen-beverage.html#slush-puppie
   -
     heading: Contract Manufacturing
     bg-img: contract-manufacturing

@@ -138,6 +138,17 @@
 }
 .homepage-cards {
     .card {
+        &:first-of-type {
+            h1 {
+                color: $black;
+            }
+            p {
+                color: $gray;
+            }
+            img {
+                margin-bottom: 10px;
+            }
+        }
         h1 {
             color: $white;
 
