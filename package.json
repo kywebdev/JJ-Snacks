@@ -14,7 +14,7 @@
     "chart.js": "^2.8.0",
     "classlist-polyfill": "^1.2.0",
     "foundation-sites": "~6.4.1",
-    "jquery": "^3.2.1",
+    "jquery": "^3.5.0",
     "motion-ui": "~1.2.2",
     "nodelist-foreach-polyfill": "^1.2.0",
     "object-fit-images": "^3.2.4",
